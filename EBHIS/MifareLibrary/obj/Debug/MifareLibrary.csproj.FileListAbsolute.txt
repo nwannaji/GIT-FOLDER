@@ -1,0 +1,45 @@
+C:\Users\PCBMEC\Desktop\CoopEVotingSystem\MifareLibrary\bin\Debug\MifareLibrary.dll
+C:\Users\PCBMEC\Desktop\CoopEVotingSystem\MifareLibrary\bin\Debug\MifareLibrary.pdb
+C:\Users\PCBMEC\Desktop\CoopEVotingSystem\MifareLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\PCBMEC\Desktop\CoopEVotingSystem\MifareLibrary\obj\Debug\MifareLibrary.dll
+C:\Users\PCBMEC\Desktop\CoopEVotingSystem\MifareLibrary\obj\Debug\MifareLibrary.pdb
+C:\Documents and Settings\Administrator\Desktop\CoopEVotingSystem\MifareLibrary\bin\Debug\MifareLibrary.dll
+C:\Documents and Settings\Administrator\Desktop\CoopEVotingSystem\MifareLibrary\bin\Debug\MifareLibrary.pdb
+C:\Documents and Settings\Administrator\Desktop\CoopEVotingSystem\MifareLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\CoopEVotingSystem\MifareLibrary\obj\Debug\MifareLibrary.dll
+C:\Documents and Settings\Administrator\Desktop\CoopEVotingSystem\MifareLibrary\obj\Debug\MifareLibrary.pdb
+C:\Users\OSIMIRY\Desktop\CoopEVotingSystem\MifareLibrary\bin\Debug\MifareLibrary.dll
+C:\Users\OSIMIRY\Desktop\CoopEVotingSystem\MifareLibrary\bin\Debug\MifareLibrary.pdb
+C:\Users\OSIMIRY\Desktop\CoopEVotingSystem\MifareLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\OSIMIRY\Desktop\CoopEVotingSystem\MifareLibrary\obj\Debug\MifareLibrary.dll
+C:\Users\OSIMIRY\Desktop\CoopEVotingSystem\MifareLibrary\obj\Debug\MifareLibrary.pdb
+C:\SYSTEM.NES\evoting_latest\CoopEVotingSystem\MifareLibrary\bin\Debug\MifareLibrary.dll
+C:\SYSTEM.NES\evoting_latest\CoopEVotingSystem\MifareLibrary\bin\Debug\MifareLibrary.pdb
+C:\SYSTEM.NES\evoting_latest\CoopEVotingSystem\MifareLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\SYSTEM.NES\evoting_latest\CoopEVotingSystem\MifareLibrary\obj\Debug\MifareLibrary.dll
+C:\SYSTEM.NES\evoting_latest\CoopEVotingSystem\MifareLibrary\obj\Debug\MifareLibrary.pdb
+C:\Users\Luutey\Desktop\CoopEVotingSystem (sup)\MifareLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Luutey\Desktop\CoopEVotingSystem (sup)\MifareLibrary\obj\Debug\MifareLibrary.pdb
+C:\Users\Luutey\Desktop\CoopEVotingSystem (sup)\MifareLibrary\bin\Debug\MifareLibrary.dll
+C:\Users\Luutey\Desktop\CoopEVotingSystem (sup)\MifareLibrary\bin\Debug\MifareLibrary.pdb
+C:\Users\Luutey\Desktop\CoopEVotingSystem (sup)\MifareLibrary\obj\Debug\MifareLibrary.dll
+C:\Users\Luutey\Desktop\NSE (optimized)\CoopEVotingSystem (sup)\MifareLibrary\bin\Debug\MifareLibrary.dll
+C:\Users\Luutey\Desktop\NSE (optimized)\CoopEVotingSystem (sup)\MifareLibrary\bin\Debug\MifareLibrary.pdb
+C:\Users\Luutey\Desktop\NSE (optimized)\CoopEVotingSystem (sup)\MifareLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Luutey\Desktop\NSE (optimized)\CoopEVotingSystem (sup)\MifareLibrary\obj\Debug\MifareLibrary.dll
+C:\Users\Luutey\Desktop\NSE (optimized)\CoopEVotingSystem (sup)\MifareLibrary\obj\Debug\MifareLibrary.pdb
+C:\Users\Luutey\Desktop\NSE (optimized)\NigComSatCoperative (sup)\MifareLibrary\bin\Debug\MifareLibrary.dll
+C:\Users\Luutey\Desktop\NSE (optimized)\NigComSatCoperative (sup)\MifareLibrary\bin\Debug\MifareLibrary.pdb
+C:\Users\Luutey\Desktop\NSE (optimized)\NigComSatCoperative (sup)\MifareLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Luutey\Desktop\NSE (optimized)\NigComSatCoperative (sup)\MifareLibrary\obj\Debug\MifareLibrary.dll
+C:\Users\Luutey\Desktop\NSE (optimized)\NigComSatCoperative (sup)\MifareLibrary\obj\Debug\MifareLibrary.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration\MifareLibrary\bin\Debug\MifareLibrary.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration\MifareLibrary\bin\Debug\MifareLibrary.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration\MifareLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration\MifareLibrary\obj\Debug\MifareLibrary.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration\MifareLibrary\obj\Debug\MifareLibrary.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\MifareLibrary\bin\Debug\MifareLibrary.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\MifareLibrary\bin\Debug\MifareLibrary.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\MifareLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\MifareLibrary\obj\Debug\MifareLibrary.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\MifareLibrary\obj\Debug\MifareLibrary.pdb

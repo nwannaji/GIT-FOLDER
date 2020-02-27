@@ -1,0 +1,21 @@
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.pdb
+C:\Users\Henrio\Desktop\RoadSafety\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.dll
+C:\Users\Henrio\Desktop\RoadSafety\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.pdb
+C:\Users\Henrio\Desktop\RoadSafety\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.dll
+C:\Users\Henrio\Desktop\RoadSafety\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.pdb
+C:\Users\Henrio\Desktop\RoadSafety\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.csprojResolveAssemblyReference.cache
+C:\Users\Henrio\Desktop\RoadSafety\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.dll
+C:\Users\Henrio\Desktop\RoadSafety\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.pdb
+C:\Users\Henrio\Documents\Visual Studio 2010\Projects\RoadSafety2\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.dll
+C:\Users\Henrio\Documents\Visual Studio 2010\Projects\RoadSafety2\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.pdb
+C:\Users\Henrio\Documents\Visual Studio 2010\Projects\RoadSafety2\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.dll
+C:\Users\Henrio\Documents\Visual Studio 2010\Projects\RoadSafety2\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.pdb
+C:\Users\Henrio\Documents\Visual Studio 2010\Projects\RoadSafety2\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.csprojResolveAssemblyReference.cache
+C:\Users\Henrio\Documents\Visual Studio 2010\Projects\RoadSafety2\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.dll
+C:\Users\Henrio\Documents\Visual Studio 2010\Projects\RoadSafety2\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.pdb

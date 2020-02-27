@@ -1,0 +1,56 @@
+c:\users\user pc\documents\visual studio 2010\Projects\EBHIS\EBHIS\obj\x86\Debug\EBHIS.Form1.resources
+c:\users\user pc\documents\visual studio 2010\Projects\EBHIS\EBHIS\obj\x86\Debug\EBHIS.Properties.Resources.resources
+c:\users\user pc\documents\visual studio 2010\Projects\EBHIS\EBHIS\obj\x86\Debug\EBHIS.csproj.GenerateResource.Cache
+c:\users\user pc\documents\visual studio 2010\Projects\EBHIS\EBHIS\bin\Debug\EBHIS.exe
+c:\users\user pc\documents\visual studio 2010\Projects\EBHIS\EBHIS\bin\Debug\EBHIS.pdb
+c:\users\user pc\documents\visual studio 2010\Projects\EBHIS\EBHIS\obj\x86\Debug\EBHIS.exe
+c:\users\user pc\documents\visual studio 2010\Projects\EBHIS\EBHIS\obj\x86\Debug\EBHIS.pdb
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\obj\x86\Debug\EBHIS.Main_window.resources
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Debug\haarcascade_frontalface_alt_tree.xml
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Debug\CameraDriver1.exe
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Debug\Emgu.CV.dll
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Debug\Emgu.Util.dll
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Debug\CameraDriver1.pdb
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\obj\x86\Debug\EBHIS.csprojResolveAssemblyReference.cache
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Debug\GFPSupremaFingerprint.dll
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Debug\Suprema.UFScanner.dll
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Debug\Suprema.UFMatcher.dll
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Debug\GFPSupremaFingerprint.pdb
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Debug\ChinaReaderMifareLib.dll
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Debug\MifareLibrary.dll
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Debug\ChinaReaderMifareLib.pdb
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Debug\MifareLibrary.pdb
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Debug\EBHIS.exe.config
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Debug\Util.dll
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Debug\VoterData.dll
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Debug\Util.pdb
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Debug\VoterData.pdb
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\obj\x86\Debug\EBHIS.csprojAssemblyReference.cache
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\obj\x86\Debug\EBHIS.Form1.resources
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\obj\x86\Debug\EBHIS.Main_window.resources
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\obj\x86\Debug\EBHIS.Properties.Resources.resources
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\obj\x86\Debug\EBHIS.csproj.GenerateResource.cache
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\obj\x86\Debug\EBHIS.csproj.CoreCompileInputs.cache
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\haarcascade_frontalface_alt_tree.xml
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\EBHIS.exe.config
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\EBHIS.exe
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\EBHIS.pdb
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\CameraDriver.exe
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\ChinaReaderMifareLib.dll
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\GFPSupremaFingerprint.dll
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\MifareLibrary.dll
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\Util.dll
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\VoterData.dll
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\Emgu.CV.dll
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\Emgu.Util.dll
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\Suprema.UFScanner.dll
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\Suprema.UFMatcher.dll
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\CameraDriver.pdb
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\ChinaReaderMifareLib.pdb
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\GFPSupremaFingerprint.pdb
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\MifareLibrary.pdb
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\Util.pdb
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\bin\Debug\VoterData.pdb
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\obj\x86\Debug\EBHIS.csproj.CopyComplete
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\obj\x86\Debug\EBHIS.exe
+C:\Users\HENRIO\Desktop\EBHIS\EBHIS\obj\x86\Debug\EBHIS.pdb

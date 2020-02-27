@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EBHISModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="EBHISModelStoreContainer">
+    <EntitySet Name="PatientContact" EntityType="EBHISModel.Store.PatientContact" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="PatientContact">
+    <Key>
+      <PropertyRef Name="PatientID" />
+    </Key>
+    <Property Name="PatientID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Firstname" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ohternames" Type="nvarchar" MaxLength="50" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sex" Type="nchar" MaxLength="10" />
+    <Property Name="BloodGroup" Type="nchar" MaxLength="10" />
+    <Property Name="GenoType" Type="nchar" MaxLength="10" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="PatientPhone" Type="int" />
+    <Property Name="NextOfKin" Type="nvarchar(max)" />
+    <Property Name="NOKAddress" Type="nvarchar(max)" />
+    <Property Name="NOKPhone" Type="int" />
+  </EntityType>
+</Schema>

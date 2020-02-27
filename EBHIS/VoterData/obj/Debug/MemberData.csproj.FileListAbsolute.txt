@@ -1,0 +1,10 @@
+C:\NigComSatCoperative\VoterData\bin\Debug\VoterData.dll
+C:\NigComSatCoperative\VoterData\bin\Debug\VoterData.pdb
+C:\NigComSatCoperative\VoterData\obj\Debug\ResolveAssemblyReference.cache
+C:\NigComSatCoperative\VoterData\obj\Debug\VoterData.dll
+C:\NigComSatCoperative\VoterData\obj\Debug\VoterData.pdb
+C:\NIGCOMSAT\NigComSatCoperative\VoterData\bin\Debug\VoterData.dll
+C:\NIGCOMSAT\NigComSatCoperative\VoterData\bin\Debug\VoterData.pdb
+C:\NIGCOMSAT\NigComSatCoperative\VoterData\obj\Debug\ResolveAssemblyReference.cache
+C:\NIGCOMSAT\NigComSatCoperative\VoterData\obj\Debug\VoterData.dll
+C:\NIGCOMSAT\NigComSatCoperative\VoterData\obj\Debug\VoterData.pdb
