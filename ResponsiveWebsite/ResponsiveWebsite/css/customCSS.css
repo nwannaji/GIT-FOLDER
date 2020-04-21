@@ -28,3 +28,11 @@
     right: 0;
     margin: auto;
 }
+body{
+  padding-top:50px;
+}
+.form-group{
+    font-weight:700;
+    font-size:medium;
+}
+

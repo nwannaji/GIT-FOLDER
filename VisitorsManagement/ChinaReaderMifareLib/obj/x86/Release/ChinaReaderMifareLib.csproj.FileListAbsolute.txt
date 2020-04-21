@@ -1,0 +1,51 @@
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.pdb
+C:\Users\MEC9\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.dll
+C:\Users\MEC9\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.pdb
+C:\Users\MEC9\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.dll
+C:\Users\MEC9\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.pdb
+C:\Users\MEC9\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.csprojResolveAssemblyReference.cache
+C:\Users\MEC9\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.dll
+C:\Users\MEC9\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.pdb
+C:\Users\Henrio\Desktop\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.dll
+C:\Users\Henrio\Desktop\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.pdb
+C:\Users\Henrio\Desktop\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.dll
+C:\Users\Henrio\Desktop\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.pdb
+C:\Users\Henrio\Desktop\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.csprojResolveAssemblyReference.cache
+C:\Users\Henrio\Desktop\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.dll
+C:\Users\Henrio\Desktop\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.pdb
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.dll
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.pdb
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.dll
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.pdb
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.dll
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.pdb
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0_2014\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.dll
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0_2014\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.pdb
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0_2014\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.dll
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0_2014\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.pdb
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0_2014\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0_2014\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.dll
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0_2014\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.pdb
+C:\NIGCOMSAT\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.dll
+C:\NIGCOMSAT\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.pdb
+C:\NIGCOMSAT\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.dll
+C:\NIGCOMSAT\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.pdb
+C:\NIGCOMSAT\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.csprojResolveAssemblyReference.cache
+C:\NIGCOMSAT\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.dll
+C:\NIGCOMSAT\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.pdb
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.dll
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\bin\x86\Release\ChinaReaderMifareLib.pdb
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.dll
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\bin\x86\Release\MifareLibrary.pdb
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.csprojAssemblyReference.cache
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.csproj.CoreCompileInputs.cache
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.csproj.CopyComplete
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.dll
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\obj\x86\Release\ChinaReaderMifareLib.pdb

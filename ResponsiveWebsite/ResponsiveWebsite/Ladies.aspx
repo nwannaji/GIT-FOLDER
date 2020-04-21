@@ -23,7 +23,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <div class="navbar navbar-default navbar-fixed-top" style="background-color:green" role="navigation">
+            <div class="navbar navbar-default navbar-fixed-top" style="background-color:cornflowerblue" role="navigation">
                 <div class="container">
                     <div class="navber-header">
                         <button type="button" class="navbar-toggle" style="background-color:white" data-toggle="collapse" data-target=".navbar-collapse">
@@ -32,41 +32,40 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="Default.aspx"><span style="font-family: 'Harlow Solid'; font-weight: 700; color:red; font-size: x-large">
-                            <img src="Images/unisex.jpg" alt="logo" height="35" />e-Boutique</span></a>
+                        <a class="navbar-brand" href="Default.aspx"><span style="font-family: 'Harlow Solid'; font-weight: 700; color:black; font-size: xx-large">
+                            <img src="Images/fashion.jpg" alt="logo" height="35" />e-Boutique</span></a>
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="Default.aspx" style="font-weight: 700;color:red">Home</a></li>
-                            <li><a href="about-us.aspx" style="font-weight: 700;color:red">About Us</a></li>
-                            <li><a href="Contacts.aspx" style="font-weight: 700;color:red">Contact</a></li>
+                            <li><a href="Default.aspx" style="font-weight: 700;color:black">Home</a></li>
+                            <li><a href="about-us.aspx" style="font-weight: 700;color:black">About Us</a></li>
                             <li class="dropdown" style="font-weight: 700">
-                                <a href="#" class="dropdown-toggle" style="color:red" data-toggle="dropdown">Products<b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" style="color:black" data-toggle="dropdown">Products<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li style="background-color:black;color:white" class="dropdown-header">Gents</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="Gents.aspx" style="font-weight:700;color:deeppink">Shirts</a></li>
-                                    <li><a href="Gents.aspx" style="font-weight:700;color:deeppink">Trouser</a></li>
-                                    <li><a href="Gents.aspx" style="font-weight:700;color:deeppink">Senegalese outfit</a></li>
-                                    <li><a href="Gents.aspx" style="font-weight:700;color:deeppink">Boxers</a></li>
-                                    <li><a href="Gents.aspx" style="font-weight:700;color:deeppink">Senators</a></li>
-                                    <li><a href="Gents.aspx" style="font-weight:700;color:deeppink">Singlets</a></li>
-                                    <li><a href="Gents.aspx" style="font-weight:700;color:deeppink">Shoes</a></li>
+                                    <li><a href="Gents.aspx" style="font-weight:700;color:black">Shirts</a></li>
+                                    <li><a href="Gents.aspx" style="font-weight:700;color:black">Trouser</a></li>
+                                    <li><a href="Gents.aspx" style="font-weight:700;color:black">Senegalese outfit</a></li>
+                                    <li><a href="Gents.aspx" style="font-weight:700;color:black">Boxers</a></li>
+                                    <li><a href="Gents.aspx" style="font-weight:700;color:black">Senators</a></li>
+                                    <li><a href="Gents.aspx" style="font-weight:700;color:black">Singlets</a></li>
+                                    <li><a href="Gents.aspx" style="font-weight:700;color:black">Shoes</a></li>
                                     <li role="separator" class="divider"></li>
                                     <li style="background-color:black;color:white" class="dropdown-header">Ladies</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="Ladies.aspx" style="font-weight:700;color:deeppink">Tops</a></li>
-                                    <li><a href="Ladies.aspx" style="font-weight:700;color:deeppink">Skirts</a></li>
-                                    <li><a href="Ladies.aspx" style="font-weight:700;color:deeppink">Weavons</a></li>
-                                    <li><a href="Ladies.aspx" style="font-weight:700;color:deeppink">Traditional wears</a></li>
-                                    <li><a href="Ladies.aspx" style="font-weight:700;color:deeppink">Marry Kay</a></li>
-                                    <li><a href="Ladies.aspx" style="font-weight:700;color:deeppink">Under wears</a></li>
-                                    <li><a href="Ladies.aspx" style="font-weight:700;color:deeppink">Leggings</a></li>
-                                    <li><a href="Ladies.aspx" style="font-weight:700;color:deeppink">Shoes</a></li>
-                                    <li><a href="Ladies.aspx" style="font-weight:700;color:deeppink">e.t.c</a></li>
+                                    <li><a href="Ladies.aspx" style="font-weight:700;color:black">Tops</a></li>
+                                    <li><a href="Ladies.aspx" style="font-weight:700;color:black">Skirts</a></li>
+                                    <li><a href="Ladies.aspx" style="font-weight:700;color:black">Weavons</a></li>
+                                    <li><a href="Ladies.aspx" style="font-weight:700;color:black">Traditional wears</a></li>
+                                    <li><a href="Ladies.aspx" style="font-weight:700;color:black">Marry Kay</a></li>
+                                    <li><a href="Ladies.aspx" style="font-weight:700;color:black">Under wears</a></li>
+                                    <li><a href="Ladies.aspx" style="font-weight:700;color:black">Leggings</a></li>
+                                    <li><a href="Ladies.aspx" style="font-weight:700;color:black">Shoes</a></li>
+                                    <li><a href="Ladies.aspx" style="font-weight:700;color:black">e.t.c</a></li>
                                 </ul>
                             </li>
-                            <li style="font-weight: 700;"><a style="color:red" href="Sign Up.aspx">Sign Up</a></li>
+                            <li style="font-weight: 700;"><a style="color:black" href="Sign Up.aspx">Sign Up</a></li>
                         </ul>
                     </div>
                 </div>
@@ -98,7 +97,7 @@
       <img src="Images/Autumn-African.jpg" alt=""/>
         <h3 style="color:black">Proudly African</h3>
           <p style="color:black">: Autumn-African-Dresses-for-Women-Private-Custom-Women-African<br />Dashiki-Skirt-Set-Head-Scarf-3-Pieces.</p>
-          <p><a class ="btn btn-lg btn-primary" href="#" role ="button">Visit Us</a></p>
+          <p><a class ="btn btn-lg btn-primary" href="Sign Up.aspx" role ="button">Visit Us</a></p>
       </div>
       <div class="col-lg-4">
        <img src="Images/African-Dresses-for-Women.jpg" alt=""/>
@@ -177,37 +176,37 @@
           <img class ="img-circle" src="Images/africana4.jpg" alt ="africa" width="140" height="140" />
                 <h4>Beautiful Short Gawn</h4>
                 <p></p>
-                <p><a class ="btn btn-default" style ="background-color:lightpink" href ="#" role="button">View &raquo;</a></p>
+                <p><a class ="btn btn-default" style ="background-color:lightblue" href ="#" role="button">View &raquo;</a></p>
             </div>
               <div class="col-lg-4">
           <img class ="img-circle" src="Images/Fadzeco-African.jpg" alt ="africa1" width="140" height="140" />
                 <h4>African Women Basin Riche</h4>
                 <p></p>
-                <p><a class ="btn btn-default" style ="background-color:lightpink" href ="#" role="button">View &raquo;</a></p>
+                <p><a class ="btn btn-default" style ="background-color:lightblue" href ="#" role="button">View &raquo;</a></p>
             </div>
               <div class="col-lg-4">
               <img class ="img-circle" src="Images/Autumn-African.jpg" alt ="africa2" width="140" height="140" />
                 <h4>Beautiful handmade african style</h4>
                 <p></p>
-                <p><a class ="btn btn-default" style ="background-color:lightpink" href ="#" role="button">View &raquo;</a></p>
+                <p><a class ="btn btn-default" style ="background-color:lightblue" href ="#" role="button">View &raquo;</a></p>
             </div>
             <div class="col-lg-4">
               <img class ="img-circle" src ="Images/dashiki-vetement.jpg" alt ="africa3" width="140" height="140" />
                 <h4>Beautiful handmade african style</h4>
                 <p></p>
-                <p><a class ="btn btn-default" style ="background-color:lightpink" href ="#" role="button">View &raquo;</a></p>
+                <p><a class ="btn btn-default" style ="background-color:lightblue" href ="#" role="button">View &raquo;</a></p>
             </div>
             <div class="col-lg-4">
               <img class ="img-circle" src ="Images/Robe-Africaine.jpg" alt ="africa4" width="140" height="140" />
                 <h4>Beautiful handmade african style</h4>
                 <p></p>
-                <p><a class ="btn btn-default" style ="background-color:lightpink" href ="#" role="button">View &raquo;</a></p>
+                <p><a class ="btn btn-default" style ="background-color:lightblue" href ="#" role="button">View &raquo;</a></p>
             </div>
             <div class="col-lg-4">
               <img class ="img-circle" src ="Images/woman-and-man.jpg" alt ="africa5" width="140" height="140" />
                 <h4>Beautiful handmade african style</h4>
                 <p></p>
-                <p><a class ="btn btn-default" style ="background-color:lightpink" href ="#" role="button">View &raquo;</a></p>
+                <p><a class ="btn btn-default" style ="background-color:lightblue" href ="#" role="button">View &raquo;</a></p>
             </div>
             </div>
         </div>
