@@ -1,0 +1,10 @@
+C:\Users\Henrio\source\repos\HttpClientDemoApp\DataAccessLibrary\bin\Debug\netcoreapp3.1\DataAccessLibrary.deps.json
+C:\Users\Henrio\source\repos\HttpClientDemoApp\DataAccessLibrary\bin\Debug\netcoreapp3.1\DataAccessLibrary.dll
+C:\Users\Henrio\source\repos\HttpClientDemoApp\DataAccessLibrary\bin\Debug\netcoreapp3.1\DataAccessLibrary.pdb
+C:\Users\Henrio\source\repos\HttpClientDemoApp\DataAccessLibrary\obj\Debug\netcoreapp3.1\DataAccessLibrary.csproj.AssemblyReference.cache
+C:\Users\Henrio\source\repos\HttpClientDemoApp\DataAccessLibrary\obj\Debug\netcoreapp3.1\DataAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Henrio\source\repos\HttpClientDemoApp\DataAccessLibrary\obj\Debug\netcoreapp3.1\DataAccessLibrary.AssemblyInfoInputs.cache
+C:\Users\Henrio\source\repos\HttpClientDemoApp\DataAccessLibrary\obj\Debug\netcoreapp3.1\DataAccessLibrary.AssemblyInfo.cs
+C:\Users\Henrio\source\repos\HttpClientDemoApp\DataAccessLibrary\obj\Debug\netcoreapp3.1\DataAccessLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Henrio\source\repos\HttpClientDemoApp\DataAccessLibrary\obj\Debug\netcoreapp3.1\DataAccessLibrary.dll
+C:\Users\Henrio\source\repos\HttpClientDemoApp\DataAccessLibrary\obj\Debug\netcoreapp3.1\DataAccessLibrary.pdb

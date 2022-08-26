@@ -1,0 +1,62 @@
+﻿@page "/clannit"
+@using DataAccessLibrary
+@using DataAccessLibrary.DeviceData
+
+@inject IAccessControllerDevicesData _db;
+
+    <h3 style="color:cadetblue">Controllers Info</h3>
+
+@if(accessData is null)
+{
+    <div><em>Loading...</em></div>
+}
+else
+{
+    <table class=" table table-striped table-dark">
+        <thead>
+            <tr>
+                <th>DeviceId</th>
+                <th>DeviceSN</th>
+                <th>DeviceIPAddress</th>
+                <th>MACAdderss</th>
+                <th>PORT</th>
+                <th>Gateway</th>
+                <th>PCIPAddress</th>
+              
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var access in accessData)
+            {
+            <tr>
+                <td>@access.DeviceId</td>
+                <td>@access.DeviceSN</td>
+                <td>@access.DeviceIPAddess</td>
+                <td>@access.Gateway</td>
+                <td>@access.MACAddress</td>
+                <td>@access.Port</td>
+                <td>@access.PCIPAddress</td>
+            </tr>
+           
+            }
+
+        </tbody>
+
+    </table>
+            }
+
+
+
+@code {
+
+    private List<DeviceModel> accessData;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        accessData = await _db.GetDevice();
+        
+    }
+
+}
