@@ -15,9 +15,13 @@ namespace DataAccessLibrary
         {
             this._db = db;
         }
-        public Task<List<DeviceModel>> GetDevice()
+        public Task<List<DeviceModel>> GetDevices()
         {
-            return _db.LoadData<DeviceModel, dynamic>(sql, new { });
+            return _db.LoadData<DeviceModel, dynamic>(sql, new {});
+        }
+        public Task<List<DeviceModel>> GetDeviceById(int id)
+        {
+            return _db.LoadData<DeviceModel, dynamic>(sql, new { id });
         }
         public Task<List<VisitorsModel>> GetVisitors()
         {

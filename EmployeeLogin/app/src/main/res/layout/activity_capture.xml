@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:layout_height="match_parent"
+    tools:Context=".Capture">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="fitCenter"
+                android:src ="@drawable/police" />
+
+            <TextView
+                android:id="@+id/txtdescription"
+                android:layout_width="181dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:hint="Nigerian Police Force"
+                android:textColorHint="#0000FF"/>
+
+
+            <EditText
+            android:id="@+id/et_fname"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:ems="15"
+            android:inputType="text"
+            android:hint="Firstname" />
+
+        <EditText
+            android:id="@+id/et_sname"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_fname"
+            android:layout_marginTop="5dp"
+            android:ems="15"
+            android:inputType="text"
+            android:hint="Surname" />
+
+        <EditText
+            android:id="@+id/et_zones"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_sname"
+            android:layout_marginTop="5dp"
+            android:ems="15"
+            android:singleLine="true"
+            android:inputType="text"
+            android:hint="Zones" />
+
+        <EditText
+            android:id="@+id/et_depts"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_zones"
+            android:layout_marginTop="5dp"
+            android:ems="15"
+            android:singleLine="true"
+            android:inputType="text"
+            android:hint="Depts" />
+
+        <EditText
+            android:id="@+id/et_forceNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_depts"
+            android:layout_marginTop="5dp"
+            android:ems="15"
+            android:singleLine="true"
+            android:inputType="text"
+            android:hint="Force Number" />
+
+        <EditText
+            android:id="@+id/et_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_forceNumber"
+            android:layout_marginTop="5dp"
+            android:ems="15"
+            android:singleLine="true"
+            android:inputType="text"
+            android:hint="Rank" />
+
+        <EditText
+            android:id="@+id/et_station"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_rank"
+            android:layout_marginTop="5dp"
+            android:ems="15"
+            android:singleLine="true"
+            android:inputType="text"
+            android:hint="Station" />
+
+        <EditText
+            android:id="@+id/et_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_station"
+            android:layout_marginTop="5dp"
+            android:ems="15"
+            android:singleLine="true"
+            android:inputType="text"
+            android:hint="Sex" />
+
+        <EditText
+            android:id="@+id/et_counts"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_sex"
+            android:layout_marginTop="5dp"
+            android:ems="15"
+            android:singleLine="true"
+            android:inputType="number"
+            android:hint="Counts: 0" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_counts"
+            android:layout_marginTop="7dp"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:text="Save" />
+
+            <Button
+                android:id="@+id/btn_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_counts"
+                android:layout_marginTop="7dp"
+                android:layout_alignParentLeft="true"
+                android:ems="10"
+                android:text="Go To Camera"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

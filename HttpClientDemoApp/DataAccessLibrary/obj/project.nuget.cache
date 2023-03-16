@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bkoIr6qYwEN1OZA66OJf6Y3SMprHr8XlMJbeQNImIWdmo5XWPLyQTdO+Vyfg5scpLUcrWhr+DCHPqBXa4iy4jw==",
+  "dgSpecHash": "z+lusDnKENg81sgJaUzfSgjMgeQ1R1jcUwe3aEDJKjjaqqxeELfte22KSNsn3UJv6BRuoCjiWeb3xKt0jXvOFg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Henrio\\source\\repos\\HttpClientDemoApp\\DataAccessLibrary\\DataAccessLibrary.csproj",
+  "projectFilePath": "C:\\Users\\Henrio\\GIT-FOLDER\\GIT-FOLDER\\HttpClientDemoApp\\DataAccessLibrary\\DataAccessLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Henrio\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Henrio\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

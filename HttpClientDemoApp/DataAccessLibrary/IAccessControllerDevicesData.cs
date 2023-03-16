@@ -6,9 +6,10 @@ namespace DataAccessLibrary
 {
     public interface IAccessControllerDevicesData
     {
-        Task<List<DeviceModel>> GetDevice();
+        Task<List<DeviceModel>> GetDeviceById(int id);
+        Task<List<DeviceModel>> GetDevices();
         Task InsertDeviceData(DeviceModel device);
-        public Task InsertVisitors(VisitorsModel visitor);
-        public Task<List<VisitorsModel>> GetVisitors();
+        Task InsertVisitors(VisitorsModel visitor);
+        Task<List<VisitorsModel>> GetVisitors();
     }
 }
