@@ -1,0 +1,13 @@
+# Ignore node_modules folder 
+
+# Ignore log files
+*.log
+
+# Ignore all .env files
+.env
+
+#Ignore all .sqlite files
+.sqlite3
+#Ignore all .exe files
+.exe
+
