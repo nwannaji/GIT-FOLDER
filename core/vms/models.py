@@ -5,7 +5,7 @@ from django.db import models
 class Employee(models.Model):
     employee_id = models.IntegerField(primary_key=True)
     employee_name = models.CharField(max_length=200, verbose_name='Employee Name')
-    employees = models.ManyToManyField("Visitor", related_name='visitors')
+    employees = models.ManyToManyField("Visitor", related_name='employee')
     dept_name = models.CharField(max_length=100, verbose_name='Department Name')
     unit = models.CharField(max_length=100, blank=True, null=True)
     date_of_employment = models.DateTimeField(default=now, blank=True, null=True, verbose_name='Date of Employment')
@@ -29,7 +29,7 @@ class Visitor(models.Model):
     otp = models.IntegerField(default=0, blank=True, null=True)
     organization = models.CharField(max_length=250, blank=True, null=True)
     dept = models.CharField(max_length=150, blank=True, verbose_name='Department(s) to Visit')
-    whom_to_see = models.ManyToManyField("Employee", blank=True, verbose_name='Employee(s) to See')
+    whom_to_see = models.ManyToManyField("Employee", blank=True, related_name='visitor')
     is_official = models.BooleanField(default=False, verbose_name='Official?')
     comments = models.TextField(blank=True, null=True)
     is_invited = models.BooleanField(default=False, blank=True, null=True, verbose_name="Invited?")
