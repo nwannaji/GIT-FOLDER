@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp"
+                android:textColorHint="#0000FF"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Username" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_below="@id/et_username"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:textColorHint="#0000FF"
+                android:inputType="textPassword"
+                android:hint="Password" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_password"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:text="Login"/>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/et_password"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:text="Go To Register"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:scaleType="fitCenter"
+                android:src ="@drawable/police" />
+
+            <TextView
+                android:id="@+id/txtdescription"
+                android:layout_width="181dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:hint="Nigerian Police Force"
+                android:textColorHint="#0000FF"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

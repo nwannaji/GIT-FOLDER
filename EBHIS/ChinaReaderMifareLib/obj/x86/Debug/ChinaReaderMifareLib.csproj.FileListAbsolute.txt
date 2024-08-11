@@ -1,0 +1,37 @@
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\x86\Debug\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\x86\Debug\ChinaReaderMifareLib.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\x86\Debug\MifareLibrary.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\x86\Debug\MifareLibrary.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\obj\x86\Debug\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\obj\x86\Debug\ChinaReaderMifareLib.pdb
+C:\Users\Luutey\Desktop\IntelID\ChinaReaderMifareLib\bin\x86\Debug\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Desktop\IntelID\ChinaReaderMifareLib\bin\x86\Debug\ChinaReaderMifareLib.pdb
+C:\Users\Luutey\Desktop\IntelID\ChinaReaderMifareLib\bin\x86\Debug\MifareLibrary.dll
+C:\Users\Luutey\Desktop\IntelID\ChinaReaderMifareLib\bin\x86\Debug\MifareLibrary.pdb
+C:\Users\Luutey\Desktop\IntelID\ChinaReaderMifareLib\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Luutey\Desktop\IntelID\ChinaReaderMifareLib\obj\x86\Debug\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Desktop\IntelID\ChinaReaderMifareLib\obj\x86\Debug\ChinaReaderMifareLib.pdb
+C:\Users\Henrio\Desktop\RoadSafety\ChinaReaderMifareLib\bin\x86\Debug\ChinaReaderMifareLib.dll
+C:\Users\Henrio\Desktop\RoadSafety\ChinaReaderMifareLib\bin\x86\Debug\ChinaReaderMifareLib.pdb
+C:\Users\Henrio\Desktop\RoadSafety\ChinaReaderMifareLib\bin\x86\Debug\MifareLibrary.dll
+C:\Users\Henrio\Desktop\RoadSafety\ChinaReaderMifareLib\bin\x86\Debug\MifareLibrary.pdb
+C:\Users\Henrio\Desktop\RoadSafety\ChinaReaderMifareLib\obj\x86\Debug\ChinaReaderMifareLib.csprojResolveAssemblyReference.cache
+C:\Users\Henrio\Desktop\RoadSafety\ChinaReaderMifareLib\obj\x86\Debug\ChinaReaderMifareLib.dll
+C:\Users\Henrio\Desktop\RoadSafety\ChinaReaderMifareLib\obj\x86\Debug\ChinaReaderMifareLib.pdb
+C:\Users\Henrio\Documents\Visual Studio 2010\Projects\RoadSafety2\ChinaReaderMifareLib\bin\x86\Debug\ChinaReaderMifareLib.dll
+C:\Users\Henrio\Documents\Visual Studio 2010\Projects\RoadSafety2\ChinaReaderMifareLib\bin\x86\Debug\ChinaReaderMifareLib.pdb
+C:\Users\Henrio\Documents\Visual Studio 2010\Projects\RoadSafety2\ChinaReaderMifareLib\bin\x86\Debug\MifareLibrary.dll
+C:\Users\Henrio\Documents\Visual Studio 2010\Projects\RoadSafety2\ChinaReaderMifareLib\bin\x86\Debug\MifareLibrary.pdb
+C:\Users\Henrio\Documents\Visual Studio 2010\Projects\RoadSafety2\ChinaReaderMifareLib\obj\x86\Debug\ChinaReaderMifareLib.csprojResolveAssemblyReference.cache
+C:\Users\Henrio\Documents\Visual Studio 2010\Projects\RoadSafety2\ChinaReaderMifareLib\obj\x86\Debug\ChinaReaderMifareLib.dll
+C:\Users\Henrio\Documents\Visual Studio 2010\Projects\RoadSafety2\ChinaReaderMifareLib\obj\x86\Debug\ChinaReaderMifareLib.pdb
+C:\Users\HENRIO\Desktop\EBHIS\ChinaReaderMifareLib\bin\x86\Debug\ChinaReaderMifareLib.dll
+C:\Users\HENRIO\Desktop\EBHIS\ChinaReaderMifareLib\bin\x86\Debug\ChinaReaderMifareLib.pdb
+C:\Users\HENRIO\Desktop\EBHIS\ChinaReaderMifareLib\bin\x86\Debug\MifareLibrary.dll
+C:\Users\HENRIO\Desktop\EBHIS\ChinaReaderMifareLib\bin\x86\Debug\MifareLibrary.pdb
+C:\Users\HENRIO\Desktop\EBHIS\ChinaReaderMifareLib\obj\x86\Debug\ChinaReaderMifareLib.csprojAssemblyReference.cache
+C:\Users\HENRIO\Desktop\EBHIS\ChinaReaderMifareLib\obj\x86\Debug\ChinaReaderMifareLib.csproj.CoreCompileInputs.cache
+C:\Users\HENRIO\Desktop\EBHIS\ChinaReaderMifareLib\obj\x86\Debug\ChinaReaderMifareLib.csproj.CopyComplete
+C:\Users\HENRIO\Desktop\EBHIS\ChinaReaderMifareLib\obj\x86\Debug\ChinaReaderMifareLib.dll
+C:\Users\HENRIO\Desktop\EBHIS\ChinaReaderMifareLib\obj\x86\Debug\ChinaReaderMifareLib.pdb

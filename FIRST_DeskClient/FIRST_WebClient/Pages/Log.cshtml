@@ -1,0 +1,39 @@
+@page
+@model IndexModel
+@section Scripts {    
+    <meta http-equiv="refresh" content="10" /> 
+    <script type="text/javascript">
+    /*function refresh() {
+        $.get('/log', function(result) {
+            $('#refreshme').html(result);
+        });
+    }
+    setInterval(refresh, 15000);
+
+    //**************** another possible solution ****************************
+
+    var autoRefresh = true;
+    var autoRefreshInterval = 1000 * 10;   //mili seconds (set to 5 seconds) 
+
+    $(document).ready(function () {
+        var refresh = function () {
+            if (autoRefresh) {
+                $('#refreshme').load('@Url.Action("Refresh", "Log")');
+            }
+            setTimeout(refresh, autoRefreshInterval);
+        };
+        refresh();
+    });*/
+    </script>
+}
+
+@{
+    ViewData["Title"] = "Current Log";
+    //var list = Model.GetList();
+}
+
+<h3>Current Log</h3>
+<div id="refreshme">
+    @await Html.PartialAsync("CurrentLog.cshtml", Model)
+</div>
+

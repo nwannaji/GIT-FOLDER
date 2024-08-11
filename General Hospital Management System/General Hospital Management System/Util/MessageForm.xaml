@@ -1,0 +1,19 @@
+﻿<Window x:Class="Utility.MessageForm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"             
+            Title ="Warninig" Height="286" Width="495" WindowStartupLocation="CenterScreen" Background="Azure" ResizeMode="NoResize" WindowStyle="ThreeDBorderWindow">
+    
+
+    <Grid Name="Warning" Height="247" Width="458">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="254*" />
+            <ColumnDefinition Width="248*" />
+        </Grid.ColumnDefinitions>
+        <Button Content="Ok" Foreground="Green" Height="36" HorizontalAlignment="Stretch" Margin="204,0,179,12" Name="btnOk" VerticalAlignment="Bottom" Width="75" FontFamily="Kristen ITC" FontSize="14" Click="btnOk_Click" Grid.ColumnSpan="2" />
+        <Image Height="111" HorizontalAlignment="Left" Margin="14,63,0,0" Name="imgMessageBoxImage" Stretch="Fill" VerticalAlignment="Top" Width="125" Source="/Util;component/Images/Warning.png" />
+        <TextBlock Height="130" HorizontalAlignment="Left" Margin="153,56,0,0" Name="txtBlcMessage" Text="TextBlock" VerticalAlignment="Top" Width="293" TextAlignment="Center" TextWrapping="Wrap" FontFamily="Kristen ITC" Grid.ColumnSpan="2" FontSize="16" />
+    
+    </Grid>
+   
+</Window>

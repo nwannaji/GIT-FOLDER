@@ -1,0 +1,7 @@
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\bin\Release\EBHIS.exe.config
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\obj\x86\Release\EBHIS.csprojResolveAssemblyReference.cache
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\obj\x86\Release\EBHIS.Form1.resources
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\obj\x86\Release\EBHIS.Main_window.resources
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\obj\x86\Release\EBHIS.Properties.Resources.resources
+C:\Users\User Pc\Documents\Visual Studio 2010\Projects\EBHIS\EBHIS\obj\x86\Release\EBHIS.csproj.GenerateResource.Cache
+C:\Users\Henrio\Desktop\EBHIS\EBHIS\bin\Release\EBHIS.exe.config

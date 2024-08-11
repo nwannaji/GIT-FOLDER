@@ -1,0 +1,7 @@
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\Release\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\Release\ChinaReaderMifareLib.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\Release\MifareLibrary.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\Release\MifareLibrary.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\obj\Release\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\obj\Release\ChinaReaderMifareLib.pdb

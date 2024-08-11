@@ -1,0 +1,84 @@
+﻿@page "/visitor"
+
+@using DataAccessLibrary
+@using DataAccessLibrary.DeviceData
+
+@inject IAccessControllerDevicesData _db;
+
+<h3 style="color:cadetblue">Visitors Page</h3>
+
+@if(visitors is  null)
+            {
+               <div style="color:cadetblue"><em>Loading...</em></div>
+            }
+else
+{
+    <table class=" table table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>PhoneNumber</th>
+                <th>UniqueCode</th>
+                <th>HostId</th>
+                <th>HostName</th>
+                <th>CheckInDate</th>
+                <th>CheckOutDate</th>
+                <th>ControllerID</th>
+                <th>ExpiryDate</th>
+                <th>DateCreated</th>
+                <th>DateFrom</th>
+                <th>DateTo</th>
+                <th>Event</th>
+                <th>ImageUrl</th>
+                <th>PermanentQuest</th>
+                <th>Status</th>
+                <th>CodeStatus</th>
+                <th>TimeFrom</th>
+                <th>TimeTo</th>
+                <th>Security</th>
+            </tr>
+        </thead>
+        <tbody>
+           @foreach(var person in visitors)
+                {
+            <tr>
+                <td>@person.Id</td>
+                <td>@person.Firstname</td>
+                <td>@person.Lastname</td>
+                <td>@person.Phone</td>
+                <td>@person.UniqueCode</td>
+                <td>@person.HostId</td>
+                <td>@person.Hostname</td>
+                <td>@person.CheckInDate</td>
+                <td>@person.CheckOutDate</td>
+                <td>@person.ClannitId</td>
+                <td>@person.ExpiryDate</td>
+                <td>@person.DateCreated</td>
+                <td>@person.DateFrom</td>
+                <td>@person.DateTo</td>
+                <td>@person.Event</td>
+                <td>@person.ImageUrl</td>
+                <td>@person.PermanentQuest</td>
+                <td>@person.Status</td>
+                <td>@person.CodeStatus</td>
+                <td>@person.TimeFrom</td>
+                <td>@person.TimeTo</td>
+                <td>@person.Security</td>
+            </tr>
+                }
+        </tbody>
+    </table>
+}
+
+@code {
+
+    private List<VisitorsModel> visitors;
+
+    protected override async Task OnInitializedAsync()
+    {
+        visitors = await _db.GetVisitors();
+    }
+
+}

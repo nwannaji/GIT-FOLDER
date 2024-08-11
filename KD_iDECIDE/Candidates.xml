@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Candidates>
+  <Candidate>
+    <MemberID>1</MemberID>
+    <LastName>OGWUCHE (BROWN)</LastName>
+    <FirstName>BENJAMIN</FirstName>
+    <MiddleName></MiddleName>
+    <PositionID>1</PositionID>
+    <ImageUrl>../P Candidates/Benjamin Ogwuche.jpeg</ImageUrl>
+  </Candidate>
+  <Candidate>
+    <MemberID>2</MemberID>
+    <LastName>MAIYAKI</LastName>
+    <FirstName>IBRAHIM</FirstName>
+    <MiddleName>S.</MiddleName>
+    <PositionID>1</PositionID>
+    <ImageUrl>../P Candidates/Ibrahim Sabo Maiyaili.jpg</ImageUrl>
+  </Candidate>
+  <Candidate>
+    <MemberID>3</MemberID>
+    <LastName>ONOJAH</LastName>
+    <FirstName>JOSEPH ATTAH</FirstName>
+    <MiddleName></MiddleName>
+    <PositionID>1</PositionID>
+    <ImageUrl>../P Candidates/Joseph Atta Onaja.jpg</ImageUrl>
+  </Candidate>
+  <Candidate>
+    <MemberID>4</MemberID>
+    <LastName>TAMUNOPIRINYE</LastName>
+    <FirstName>JAMAICA</FirstName>
+    <MiddleName></MiddleName>
+    <PositionID>1</PositionID>
+    <ImageUrl>../P Candidates/Jamaica Tamino Priaye.jpg</ImageUrl>
+  </Candidate>
+  <Candidate>
+    <MemberID>5</MemberID>
+    <LastName>DASAT</LastName>
+    <FirstName>PETER</FirstName>
+    <MiddleName>D.</MiddleName>
+    <PositionID>2</PositionID>
+    <ImageUrl>../VP Candidates/Peter D. Dasat.jpg</ImageUrl>
+  </Candidate>
+  <Candidate>
+    <MemberID>6</MemberID>
+    <LastName>CLETUS</LastName>
+    <FirstName>AKUBOKO</FirstName>
+    <MiddleName></MiddleName>
+    <PositionID>2</PositionID>
+    <ImageUrl>../VP Candidates/Akuboko Cletus.jpg</ImageUrl>
+  </Candidate>
+  <Candidate>
+    <MemberID>7</MemberID>
+    <LastName>IBRAHIM</LastName>
+    <FirstName>MARTINS</FirstName>
+    <MiddleName></MiddleName>
+    <PositionID>2</PositionID>
+    <ImageUrl>../VP Candidates/Ibrahim Martins.jpg</ImageUrl>
+  </Candidate>
+  <Candidate>
+    <MemberID>8</MemberID>
+    <LastName>DA-BINDO</LastName>
+    <FirstName>BINDO</FirstName>
+    <MiddleName>N.Y.</MiddleName>
+    <PositionID>3</PositionID>
+    <ImageUrl>../Gen Sec Candidates/Bindo Da-Bindo.jpg</ImageUrl>
+  </Candidate>
+ <Candidate>
+    <MemberID>9</MemberID>
+    <LastName>ADEJUMO</LastName>
+    <FirstName>ADEMOLA</FirstName>
+    <MiddleName>ISAAC</MiddleName>
+    <PositionID>3</PositionID>
+    <ImageUrl>../Gen Sec Candidates/Ademola Isaac.jpg</ImageUrl>
+  </Candidate>
+  <Candidate>
+    <MemberID>10</MemberID>
+    <LastName>BARNABAS</LastName>
+    <FirstName>JACOB</FirstName>
+    <MiddleName></MiddleName>
+    <PositionID>3</PositionID>
+    <ImageUrl>../Gen Sec Candidates/Jacob Barnabas.jpg</ImageUrl>
+  </Candidate>
+  <Candidate>
+    <MemberID>11</MemberID>
+    <LastName>TAIWO</LastName>
+    <FirstName>OLORI</FirstName>
+    <MiddleName></MiddleName>
+    <PositionID>4</PositionID>
+    <ImageUrl>../Ast. Gen Sec Candidates/Olori Taiwo.jpg</ImageUrl>
+  </Candidate>
+  <Candidate>
+    <MemberID>12</MemberID>
+    <LastName>ULLO</LastName>
+    <FirstName>KASUWA</FirstName>
+    <MiddleName></MiddleName>
+    <PositionID>4</PositionID>
+    <ImageUrl>../Ast. Gen Sec Candidates/Kasuwa Ullo.jpg</ImageUrl>
+  </Candidate>
+  <Candidate>
+    <MemberID>13</MemberID>
+    <LastName>JIBRIN</LastName>
+    <FirstName>ALIYU</FirstName>
+    <MiddleName></MiddleName>
+    <PositionID>5</PositionID>
+    <ImageUrl>../Treasurer Candidates/Aliyu Jibrin.jpg</ImageUrl>
+  </Candidate>
+  <Candidate>
+    <MemberID>14</MemberID>
+    <LastName>AGBONLUAI</LastName>
+    <FirstName>ODIAUA</FirstName>
+    <MiddleName></MiddleName>
+    <PositionID>5</PositionID>
+    <ImageUrl>../Treasurer Candidates/Engr. Odiaua Agbonluai.jpg</ImageUrl>
+  </Candidate>
+  <Candidate>
+    <MemberID>15</MemberID>
+    <LastName>ILIYASU</LastName>
+    <FirstName>BALA</FirstName>
+    <MiddleName>NINGI</MiddleName>
+    <PositionID>5</PositionID>
+    <ImageUrl>../Treasurer Candidates/Bala Iningi.jpg</ImageUrl>
+  </Candidate>     
+  <Candidate>
+    <MemberID>16</MemberID>
+    <LastName>IYERE</LastName>
+    <FirstName>PETER</FirstName>
+    <MiddleName></MiddleName>
+    <PositionID>6</PositionID>
+    <ImageUrl>../FinSec Candidates/Peter Iyere.jpg</ImageUrl>
+  </Candidate>
+  <Candidate>
+    <MemberID>17</MemberID>
+    <LastName>CHRISTIAN</LastName>
+    <FirstName>HYAT</FirstName>
+    <MiddleName>G</MiddleName>
+    <PositionID>6</PositionID>
+    <ImageUrl>../FinSec Candidates/Hyat G. Christian.jpg</ImageUrl>
+  </Candidate>
+  <Candidate>
+    <MemberID>18</MemberID>
+    <LastName>ABDULLAHI</LastName>
+    <FirstName>ROSE</FirstName>
+    <MiddleName>LAMI</MiddleName>
+    <PositionID>6</PositionID>
+    <ImageUrl>../FinSec Candidates/Rose Lani Abdullahi.jpg</ImageUrl>
+  </Candidate>
+  <Candidate>
+    <MemberID>19</MemberID>
+    <LastName>ABIOYE</LastName>
+    <FirstName>JOSPEPH</FirstName>
+    <MiddleName>O</MiddleName>
+    <PositionID>7</PositionID>
+    <ImageUrl>../PRO Candidates/Joseph Abioye.jpg</ImageUrl>
+  </Candidate>
+  <Candidate>
+    <MemberID>20</MemberID>
+    <LastName>USHIE</LastName>
+    <FirstName>CLETUS</FirstName>
+    <MiddleName></MiddleName>
+    <PositionID>7</PositionID>
+    <ImageUrl>../PRO Candidates/Cletus Ushie.jpg</ImageUrl>
+  </Candidate>
+</Candidates>

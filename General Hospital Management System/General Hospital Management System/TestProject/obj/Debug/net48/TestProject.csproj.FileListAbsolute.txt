@@ -1,0 +1,6 @@
+C:\Users\HENRIO\source\repos\General Hospital Management System\TestProject\obj\Debug\net48\TestProject.csproj.AssemblyReference.cache
+C:\Users\HENRIO\source\repos\General Hospital Management System\TestProject\obj\Debug\net48\TestProject.Form1.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\TestProject\obj\Debug\net48\TestProject.csproj.GenerateResource.cache
+C:\Users\HENRIO\source\repos\General Hospital Management System\TestProject\obj\Debug\net48\TestProject.AssemblyInfoInputs.cache
+C:\Users\HENRIO\source\repos\General Hospital Management System\TestProject\obj\Debug\net48\TestProject.AssemblyInfo.cs
+C:\Users\HENRIO\source\repos\General Hospital Management System\TestProject\obj\Debug\net48\TestProject.csproj.CoreCompileInputs.cache

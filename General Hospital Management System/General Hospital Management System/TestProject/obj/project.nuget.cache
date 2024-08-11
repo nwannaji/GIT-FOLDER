@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Al6PLSH7NbVsTzrLBJY3kn2dK4DS38cJ3Z/iN0m9bTyU5fFRCU+OTi01UnaBvbj4hwka9mxxkxuSxINdAlzWgQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HENRIO\\source\\repos\\General Hospital Management System\\TestProject\\TestProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HENRIO\\.nuget\\packages\\system.data.sqlclient\\4.8.2\\system.data.sqlclient.4.8.2.nupkg.sha512"
+  ],
+  "logs": []
+}

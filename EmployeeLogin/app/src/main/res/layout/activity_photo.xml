@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".PhotoActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnSelectPhoto"
+            android:layout_width="166dp"
+            android:layout_height="55dp"
+            android:layout_below="@id/et_rForceNumber"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:ems="5"
+            android:text="Take Photo" />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="187dp"
+            android:layout_height="187dp"
+            android:layout_below="@id/txtdescription"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="25dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_photo_camera_24" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/et_rForceNumber"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="right"
+            android:ems="10"
+            android:text=" Go Back"/>
+
+        <EditText
+            android:id="@+id/et_rOfficer"
+            android:layout_width="406dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/camera"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:hint="Registered By:"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_rForceNumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/et_rOfficer"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:hint="Registered By Force Number"
+            android:inputType="number" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/police" />
+
+        <TextView
+            android:id="@+id/txtdescription"
+            android:layout_width="181dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:hint="Nigerian Police Force"
+            android:textColorHint="#0000FF"/>
+
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

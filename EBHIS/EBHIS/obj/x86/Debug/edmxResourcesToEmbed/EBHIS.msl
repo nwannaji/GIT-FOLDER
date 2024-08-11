@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EBHISModelStoreContainer" CdmEntityContainer="EBHISEntities">
+    <EntitySetMapping Name="PatientContacts">
+      <EntityTypeMapping TypeName="EBHISModel.PatientContact">
+        <MappingFragment StoreEntitySet="PatientContact">
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="Firstname" ColumnName="Firstname" />
+          <ScalarProperty Name="Ohternames" ColumnName="Ohternames" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="BloodGroup" ColumnName="BloodGroup" />
+          <ScalarProperty Name="GenoType" ColumnName="GenoType" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PatientPhone" ColumnName="PatientPhone" />
+          <ScalarProperty Name="NextOfKin" ColumnName="NextOfKin" />
+          <ScalarProperty Name="NOKAddress" ColumnName="NOKAddress" />
+          <ScalarProperty Name="NOKPhone" ColumnName="NOKPhone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

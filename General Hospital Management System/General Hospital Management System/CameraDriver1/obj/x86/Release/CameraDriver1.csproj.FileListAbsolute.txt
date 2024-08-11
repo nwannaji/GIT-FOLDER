@@ -1,0 +1,126 @@
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\PDPRegistration\CameraDriver1\bin\Release\haarcascade_frontalface_alt_tree.xml
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\PDPRegistration\CameraDriver1\bin\Release\CameraDriver1.exe
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\PDPRegistration\CameraDriver1\bin\Release\CameraDriver1.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\PDPRegistration\CameraDriver1\bin\Release\Emgu.CV.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\PDPRegistration\CameraDriver1\bin\Release\Emgu.Util.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\PDPRegistration\CameraDriver1\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\PDPRegistration\CameraDriver1\obj\x86\Release\CameraDriver1.CameraWin.resources
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\PDPRegistration\CameraDriver1\obj\x86\Release\CameraDriver1.Properties.Resources.resources
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\PDPRegistration\CameraDriver1\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\PDPRegistration\CameraDriver1\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\PDPRegistration\CameraDriver1\obj\x86\Release\CameraDriver1.exe
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\PDPRegistration\CameraDriver1\obj\x86\Release\CameraDriver1.pdb
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\Eruchie's Version\NCDMB\NCDMB\CameraDriver1\bin\Release\haarcascade_frontalface_alt_tree.xml
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\Eruchie's Version\NCDMB\NCDMB\CameraDriver1\bin\Release\CameraDriver1.exe
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\Eruchie's Version\NCDMB\NCDMB\CameraDriver1\bin\Release\CameraDriver1.pdb
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\Eruchie's Version\NCDMB\NCDMB\CameraDriver1\bin\Release\Emgu.CV.dll
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\Eruchie's Version\NCDMB\NCDMB\CameraDriver1\bin\Release\Emgu.Util.dll
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\Eruchie's Version\NCDMB\NCDMB\CameraDriver1\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\Eruchie's Version\NCDMB\NCDMB\CameraDriver1\obj\x86\Release\CameraDriver1.CameraWin.resources
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\Eruchie's Version\NCDMB\NCDMB\CameraDriver1\obj\x86\Release\CameraDriver1.Properties.Resources.resources
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\Eruchie's Version\NCDMB\NCDMB\CameraDriver1\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\Eruchie's Version\NCDMB\NCDMB\CameraDriver1\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\Eruchie's Version\NCDMB\NCDMB\CameraDriver1\obj\x86\Release\CameraDriver1.exe
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\Eruchie's Version\NCDMB\NCDMB\CameraDriver1\obj\x86\Release\CameraDriver1.pdb
+C:\Users\Luutey\WOW\NCDMB\CameraDriver1\bin\Release\haarcascade_frontalface_alt_tree.xml
+C:\Users\Luutey\WOW\NCDMB\CameraDriver1\bin\Release\CameraDriver1.exe
+C:\Users\Luutey\WOW\NCDMB\CameraDriver1\bin\Release\CameraDriver1.pdb
+C:\Users\Luutey\WOW\NCDMB\CameraDriver1\bin\Release\Emgu.CV.dll
+C:\Users\Luutey\WOW\NCDMB\CameraDriver1\bin\Release\Emgu.Util.dll
+C:\Users\Luutey\WOW\NCDMB\CameraDriver1\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Luutey\WOW\NCDMB\CameraDriver1\obj\x86\Release\CameraDriver1.CameraWin.resources
+C:\Users\Luutey\WOW\NCDMB\CameraDriver1\obj\x86\Release\CameraDriver1.Properties.Resources.resources
+C:\Users\Luutey\WOW\NCDMB\CameraDriver1\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Luutey\WOW\NCDMB\CameraDriver1\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Luutey\WOW\NCDMB\CameraDriver1\obj\x86\Release\CameraDriver1.exe
+C:\Users\Luutey\WOW\NCDMB\CameraDriver1\obj\x86\Release\CameraDriver1.pdb
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\DotFusCatorVersion\NCDMB\CameraDriver1\bin\Release\haarcascade_frontalface_alt_tree.xml
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\DotFusCatorVersion\NCDMB\CameraDriver1\bin\Release\CameraDriver1.exe
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\DotFusCatorVersion\NCDMB\CameraDriver1\bin\Release\CameraDriver1.pdb
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\DotFusCatorVersion\NCDMB\CameraDriver1\bin\Release\Emgu.CV.dll
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\DotFusCatorVersion\NCDMB\CameraDriver1\bin\Release\Emgu.Util.dll
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\DotFusCatorVersion\NCDMB\CameraDriver1\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\DotFusCatorVersion\NCDMB\CameraDriver1\obj\x86\Release\CameraDriver1.CameraWin.resources
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\DotFusCatorVersion\NCDMB\CameraDriver1\obj\x86\Release\CameraDriver1.Properties.Resources.resources
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\DotFusCatorVersion\NCDMB\CameraDriver1\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\DotFusCatorVersion\NCDMB\CameraDriver1\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\DotFusCatorVersion\NCDMB\CameraDriver1\obj\x86\Release\CameraDriver1.exe
+C:\Users\Luutey\Office tasks\CMDB\FromScratch\DotFusCatorVersion\NCDMB\CameraDriver1\obj\x86\Release\CameraDriver1.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\CameraDriver1\bin\Release\haarcascade_frontalface_alt_tree.xml
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\CameraDriver1\bin\Release\CameraDriver1.exe
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\CameraDriver1\bin\Release\CameraDriver1.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\CameraDriver1\bin\Release\Emgu.CV.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\CameraDriver1\bin\Release\Emgu.Util.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\CameraDriver1\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\CameraDriver1\obj\x86\Release\CameraDriver1.CameraWin.resources
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\CameraDriver1\obj\x86\Release\CameraDriver1.Properties.Resources.resources
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\CameraDriver1\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\CameraDriver1\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\CameraDriver1\obj\x86\Release\CameraDriver1.exe
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\CameraDriver1\obj\x86\Release\CameraDriver1.pdb
+C:\Users\MEC9\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 2.0.0\CameraDriver1\bin\Release\haarcascade_frontalface_alt_tree.xml
+C:\Users\MEC9\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 2.0.0\CameraDriver1\bin\Release\CameraDriver1.exe
+C:\Users\MEC9\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 2.0.0\CameraDriver1\bin\Release\CameraDriver1.pdb
+C:\Users\MEC9\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 2.0.0\CameraDriver1\bin\Release\Emgu.CV.dll
+C:\Users\MEC9\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 2.0.0\CameraDriver1\bin\Release\Emgu.Util.dll
+C:\Users\MEC9\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 2.0.0\CameraDriver1\obj\x86\Release\CameraDriver1.CameraWin.resources
+C:\Users\MEC9\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 2.0.0\CameraDriver1\obj\x86\Release\CameraDriver1.Properties.Resources.resources
+C:\Users\MEC9\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 2.0.0\CameraDriver1\obj\x86\Release\CameraDriver1.csproj.GenerateResource.Cache
+C:\Users\MEC9\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 2.0.0\CameraDriver1\obj\x86\Release\CameraDriver1.exe
+C:\Users\MEC9\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 2.0.0\CameraDriver1\obj\x86\Release\CameraDriver1.pdb
+C:\Users\Henrio\Desktop\EvotingRegistration - Version 2.0.0\CameraDriver1\bin\Release\haarcascade_frontalface_alt_tree.xml
+C:\Users\Henrio\Desktop\EvotingRegistration - Version 2.0.0\CameraDriver1\bin\Release\CameraDriver1.exe
+C:\Users\Henrio\Desktop\EvotingRegistration - Version 2.0.0\CameraDriver1\bin\Release\CameraDriver1.pdb
+C:\Users\Henrio\Desktop\EvotingRegistration - Version 2.0.0\CameraDriver1\bin\Release\Emgu.CV.dll
+C:\Users\Henrio\Desktop\EvotingRegistration - Version 2.0.0\CameraDriver1\bin\Release\Emgu.Util.dll
+C:\Users\Henrio\Desktop\EvotingRegistration - Version 2.0.0\CameraDriver1\obj\x86\Release\CameraDriver1.CameraWin.resources
+C:\Users\Henrio\Desktop\EvotingRegistration - Version 2.0.0\CameraDriver1\obj\x86\Release\CameraDriver1.Properties.Resources.resources
+C:\Users\Henrio\Desktop\EvotingRegistration - Version 2.0.0\CameraDriver1\obj\x86\Release\CameraDriver1.csproj.GenerateResource.Cache
+C:\Users\Henrio\Desktop\EvotingRegistration - Version 2.0.0\CameraDriver1\obj\x86\Release\CameraDriver1.exe
+C:\Users\Henrio\Desktop\EvotingRegistration - Version 2.0.0\CameraDriver1\obj\x86\Release\CameraDriver1.pdb
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0\CameraDriver1\bin\Release\haarcascade_frontalface_alt_tree.xml
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0\CameraDriver1\bin\Release\CameraDriver1.exe
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0\CameraDriver1\bin\Release\CameraDriver1.pdb
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0\CameraDriver1\bin\Release\Emgu.CV.dll
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0\CameraDriver1\bin\Release\Emgu.Util.dll
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0\CameraDriver1\obj\x86\Release\CameraDriver1.CameraWin.resources
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0\CameraDriver1\obj\x86\Release\CameraDriver1.Properties.Resources.resources
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0\CameraDriver1\obj\x86\Release\CameraDriver1.csproj.GenerateResource.Cache
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0\CameraDriver1\obj\x86\Release\CameraDriver1.exe
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0\CameraDriver1\obj\x86\Release\CameraDriver1.pdb
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0\CameraDriver1\obj\x86\Release\CameraDriver1.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0_2014\CameraDriver1\bin\Release\haarcascade_frontalface_alt_tree.xml
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0_2014\CameraDriver1\bin\Release\CameraDriver1.exe
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0_2014\CameraDriver1\bin\Release\CameraDriver1.pdb
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0_2014\CameraDriver1\bin\Release\Emgu.CV.dll
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0_2014\CameraDriver1\bin\Release\Emgu.Util.dll
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0_2014\CameraDriver1\obj\x86\Release\CameraDriver1.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0_2014\CameraDriver1\obj\x86\Release\CameraDriver1.CameraWin.resources
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0_2014\CameraDriver1\obj\x86\Release\CameraDriver1.Properties.Resources.resources
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0_2014\CameraDriver1\obj\x86\Release\CameraDriver1.csproj.GenerateResource.Cache
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0_2014\CameraDriver1\obj\x86\Release\CameraDriver1.exe
+C:\Program Files (x86)\NIGCOMSAT\EvotingRegistration - Version 2.0.0_2014\CameraDriver1\obj\x86\Release\CameraDriver1.pdb
+C:\NIGCOMSAT\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\bin\Release\haarcascade_frontalface_alt_tree.xml
+C:\NIGCOMSAT\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\bin\Release\CameraDriver1.exe
+C:\NIGCOMSAT\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\bin\Release\CameraDriver1.pdb
+C:\NIGCOMSAT\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\bin\Release\Emgu.CV.dll
+C:\NIGCOMSAT\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\bin\Release\Emgu.Util.dll
+C:\NIGCOMSAT\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\obj\x86\Release\CameraDriver1.csprojResolveAssemblyReference.cache
+C:\NIGCOMSAT\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\obj\x86\Release\CameraDriver1.CameraWin.resources
+C:\NIGCOMSAT\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\obj\x86\Release\CameraDriver1.Properties.Resources.resources
+C:\NIGCOMSAT\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\obj\x86\Release\CameraDriver1.csproj.GenerateResource.Cache
+C:\NIGCOMSAT\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\obj\x86\Release\CameraDriver1.exe
+C:\NIGCOMSAT\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\obj\x86\Release\CameraDriver1.pdb
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\bin\Release\haarcascade_frontalface_alt_tree.xml
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\bin\Release\CameraDriver1.exe
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\bin\Release\CameraDriver1.pdb
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\bin\Release\Emgu.CV.dll
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\bin\Release\Emgu.Util.dll
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\obj\x86\Release\CameraDriver1.csprojAssemblyReference.cache
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\obj\x86\Release\CameraDriver1.CameraWin.resources
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\obj\x86\Release\CameraDriver1.Properties.Resources.resources
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\obj\x86\Release\CameraDriver1.csproj.GenerateResource.cache
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\obj\x86\Release\CameraDriver1.csproj.CoreCompileInputs.cache
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\obj\x86\Release\CameraDriver1.csproj.CopyComplete
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\obj\x86\Release\CameraDriver1.exe
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\CameraDriver1\obj\x86\Release\CameraDriver1.pdb

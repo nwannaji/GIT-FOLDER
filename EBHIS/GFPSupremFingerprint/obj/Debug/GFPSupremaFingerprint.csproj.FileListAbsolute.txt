@@ -1,0 +1,46 @@
+C:\SYSTEM.NES\ClockingServer(BIO)v5.0\GFPSupremFingerprint\bin\Debug\GFPSupremFingerprint.dll
+C:\SYSTEM.NES\ClockingServer(BIO)v5.0\GFPSupremFingerprint\bin\Debug\GFPSupremFingerprint.pdb
+C:\SYSTEM.NES\ClockingServer(BIO)v5.0\GFPSupremFingerprint\bin\Debug\BiometricInterface.dll
+C:\SYSTEM.NES\ClockingServer(BIO)v5.0\GFPSupremFingerprint\bin\Debug\Suprema.UFMatcher.dll
+C:\SYSTEM.NES\ClockingServer(BIO)v5.0\GFPSupremFingerprint\bin\Debug\Suprema.UFScanner.dll
+C:\SYSTEM.NES\ClockingServer(BIO)v5.0\GFPSupremFingerprint\obj\Debug\ResolveAssemblyReference.cache
+C:\SYSTEM.NES\ClockingServer(BIO)v5.0\GFPSupremFingerprint\obj\Debug\GFPSupremFingerprint.dll
+C:\SYSTEM.NES\ClockingServer(BIO)v5.0\GFPSupremFingerprint\obj\Debug\GFPSupremFingerprint.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\GFPSupremaFingerprint.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\GFPSupremaFingerprint.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\BiometricInterface.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\Suprema.UFMatcher.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\Suprema.UFScanner.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\obj\Debug\GFPSupremaFingerprint.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\obj\Debug\GFPSupremaFingerprint.pdb
+F:\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\GFPSupremaFingerprint.dll
+F:\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\GFPSupremaFingerprint.pdb
+F:\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\BiometricInterface.dll
+F:\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\Suprema.UFMatcher.dll
+F:\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\Suprema.UFScanner.dll
+F:\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\obj\Debug\ResolveAssemblyReference.cache
+F:\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\obj\Debug\GFPSupremaFingerprint.dll
+F:\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\obj\Debug\GFPSupremaFingerprint.pdb
+C:\SYSTEM.NES\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\GFPSupremaFingerprint.dll
+C:\SYSTEM.NES\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\GFPSupremaFingerprint.pdb
+C:\SYSTEM.NES\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\BiometricInterface.dll
+C:\SYSTEM.NES\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\Suprema.UFMatcher.dll
+C:\SYSTEM.NES\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\Suprema.UFScanner.dll
+C:\SYSTEM.NES\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\obj\Debug\ResolveAssemblyReference.cache
+C:\SYSTEM.NES\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\obj\Debug\GFPSupremaFingerprint.dll
+C:\SYSTEM.NES\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\obj\Debug\GFPSupremaFingerprint.pdb
+C:\Users\Luutey\Documents\Visual Studio 2008\Projects\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\GFPSupremaFingerprint.dll
+C:\Users\Luutey\Documents\Visual Studio 2008\Projects\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\GFPSupremaFingerprint.pdb
+C:\Users\Luutey\Documents\Visual Studio 2008\Projects\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\Suprema.UFMatcher.dll
+C:\Users\Luutey\Documents\Visual Studio 2008\Projects\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\Suprema.UFScanner.dll
+C:\Users\Luutey\Documents\Visual Studio 2008\Projects\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Luutey\Documents\Visual Studio 2008\Projects\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\obj\Debug\GFPSupremaFingerprint.dll
+C:\Users\Luutey\Documents\Visual Studio 2008\Projects\ClockingServer(BIO)v5.0(suprema)\GFPSupremFingerprint\obj\Debug\GFPSupremaFingerprint.pdb
+C:\Users\Luutey\Documents\Visual Studio 2008\Projects\ClockingServer(only BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\GFPSupremaFingerprint.dll
+C:\Users\Luutey\Documents\Visual Studio 2008\Projects\ClockingServer(only BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\GFPSupremaFingerprint.pdb
+C:\Users\Luutey\Documents\Visual Studio 2008\Projects\ClockingServer(only BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\Suprema.UFMatcher.dll
+C:\Users\Luutey\Documents\Visual Studio 2008\Projects\ClockingServer(only BIO)v5.0(suprema)\GFPSupremFingerprint\bin\Debug\Suprema.UFScanner.dll
+C:\Users\Luutey\Documents\Visual Studio 2008\Projects\ClockingServer(only BIO)v5.0(suprema)\GFPSupremFingerprint\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Luutey\Documents\Visual Studio 2008\Projects\ClockingServer(only BIO)v5.0(suprema)\GFPSupremFingerprint\obj\Debug\GFPSupremaFingerprint.dll
+C:\Users\Luutey\Documents\Visual Studio 2008\Projects\ClockingServer(only BIO)v5.0(suprema)\GFPSupremFingerprint\obj\Debug\GFPSupremaFingerprint.pdb

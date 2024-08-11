@@ -1,0 +1,50 @@
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\bin\Debug\haarcascade_frontalface_alt_tree.xml
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\bin\Debug\General Hospital Management System.exe
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\bin\Debug\General Hospital Management System.pdb
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\bin\Debug\RTC.dll
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\bin\Debug\iConfRTCWinForm.dll
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\bin\Debug\CameraDriver1.exe
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\bin\Debug\Guna.UI2.dll
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\bin\Debug\Util.dll
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\bin\Debug\Emgu.CV.dll
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\bin\Debug\Emgu.Util.dll
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\bin\Debug\CameraDriver1.pdb
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\bin\Debug\Util.pdb
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmHelp.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmConsultation.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmDailyTransaction.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmDocPrescription.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmEmployee.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmLogin.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.FrmAddNewDepartment.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.FrmAppointment.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmMedication.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmNurese.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmParent.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmPatient.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmPatientBills.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmPatientVitals.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmPayments.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmProduct.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmsplashScreen.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmSupplier.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmUpdateEmployee.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmUpdatePassword.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmUpdatePatient.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmUsers.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmViewAppointment.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmViewBills.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmViewDept.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmViewEmployee.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmViewPatient.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmViewUsers.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmWard.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.Properties.Resources.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General Hospital Management System.csproj.GenerateResource.cache
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General Hospital Management System.csproj.CoreCompileInputs.cache
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General Hospital Management System.csproj.CopyComplete
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General Hospital Management System.exe
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General Hospital Management System.pdb
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General Hospital Management System.csprojAssemblyReference.cache
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmFemaleWard.resources
+C:\Users\HENRIO\source\repos\General Hospital Management System\General Hospital Management System\obj\Debug\General_Hospital_Management_System.frmMaleWard.resources

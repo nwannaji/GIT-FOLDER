@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MembershipCard", "MembershipCard\MembershipCard.csproj", "{07088395-610B-47A3-80DF-8CC4080D23D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07088395-610B-47A3-80DF-8CC4080D23D2}.Debug|x86.ActiveCfg = Debug|x86
+		{07088395-610B-47A3-80DF-8CC4080D23D2}.Debug|x86.Build.0 = Debug|x86
+		{07088395-610B-47A3-80DF-8CC4080D23D2}.Release|x86.ActiveCfg = Release|x86
+		{07088395-610B-47A3-80DF-8CC4080D23D2}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

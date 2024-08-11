@@ -1,0 +1,33 @@
+@model IndexModel
+
+@{
+    var list = Model.GetList();
+}
+
+@if(!@list.Any()) { <h5 class="text-danger">There are currently no records to display for today.</h5> }
+else {
+    <table class="table table-striped table-condensed table-hover" style="width:80%">
+        <thead class="thead-light" style="background-color:khaki;color:white">
+            <tr>
+                <th scope="col">SN</th>
+                <th scope="col">Laptop SN</th>
+                <th scope="col">User</th>
+                <th scope="col">Status</th>
+                <th scope="col">Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(var index = 0; index < @list.Count; index++)
+            {
+                <tr>
+                    <th scope="row">@list[@index].SN</th>
+                    <td>@list[@index].LaptopId</td>
+                    <td style="font-weight:bold">@list[@index].User</td>
+                    <td style="font-weight:bold">@list[@index].Status</td>
+                    <td>@list[@index].Time.ToString("hh:mm:ss tt")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+<!--<p>Use this area to provide additional information.</p>-->

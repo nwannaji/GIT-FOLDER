@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7fFJcnTGMpgSwwDWWQR5ruleoO4cIXXt7r95U46nzoXwQPrYYsjKpQ8tePpMy/J4Gb49BSgL5FUM6tXnbZgczA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HENRIO\\source\\repos\\General Hospital Management System\\General Hospital Management System\\General Hospital Management System.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HENRIO\\.nuget\\packages\\iconfrtc.winform.x64\\1.0.1.55\\iconfrtc.winform.x64.1.0.1.55.nupkg.sha512"
+  ],
+  "logs": []
+}

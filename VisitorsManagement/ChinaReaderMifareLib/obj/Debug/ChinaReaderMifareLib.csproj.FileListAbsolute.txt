@@ -1,0 +1,89 @@
+C:\Users\PCBMEC\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.dll
+C:\Users\PCBMEC\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.pdb
+C:\Users\PCBMEC\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\bin\Debug\MifareLibrary.dll
+C:\Users\PCBMEC\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\bin\Debug\MifareLibrary.pdb
+C:\Users\PCBMEC\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\PCBMEC\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.dll
+C:\Users\PCBMEC\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.pdb
+C:\Documents and Settings\Administrator\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.dll
+C:\Documents and Settings\Administrator\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.pdb
+C:\Documents and Settings\Administrator\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\bin\Debug\MifareLibrary.dll
+C:\Documents and Settings\Administrator\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\bin\Debug\MifareLibrary.pdb
+C:\Documents and Settings\Administrator\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.dll
+C:\Documents and Settings\Administrator\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.pdb
+C:\Users\OSIMIRY\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.dll
+C:\Users\OSIMIRY\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.pdb
+C:\Users\OSIMIRY\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\bin\Debug\MifareLibrary.dll
+C:\Users\OSIMIRY\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\bin\Debug\MifareLibrary.pdb
+C:\Users\OSIMIRY\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\OSIMIRY\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.dll
+C:\Users\OSIMIRY\Desktop\CoopEVotingSystem\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.pdb
+C:\SYSTEM.NES\evoting_latest\CoopEVotingSystem\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.dll
+C:\SYSTEM.NES\evoting_latest\CoopEVotingSystem\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.pdb
+C:\SYSTEM.NES\evoting_latest\CoopEVotingSystem\ChinaReaderMifareLib\bin\Debug\MifareLibrary.dll
+C:\SYSTEM.NES\evoting_latest\CoopEVotingSystem\ChinaReaderMifareLib\bin\Debug\MifareLibrary.pdb
+C:\SYSTEM.NES\evoting_latest\CoopEVotingSystem\ChinaReaderMifareLib\obj\Debug\ResolveAssemblyReference.cache
+C:\SYSTEM.NES\evoting_latest\CoopEVotingSystem\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.dll
+C:\SYSTEM.NES\evoting_latest\CoopEVotingSystem\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.pdb
+C:\Users\Luutey\Desktop\CoopEVotingSystem (sup)\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Desktop\CoopEVotingSystem (sup)\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.pdb
+C:\Users\Luutey\Desktop\CoopEVotingSystem (sup)\ChinaReaderMifareLib\bin\Debug\MifareLibrary.dll
+C:\Users\Luutey\Desktop\CoopEVotingSystem (sup)\ChinaReaderMifareLib\bin\Debug\MifareLibrary.pdb
+C:\Users\Luutey\Desktop\CoopEVotingSystem (sup)\ChinaReaderMifareLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Luutey\Desktop\CoopEVotingSystem (sup)\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Desktop\CoopEVotingSystem (sup)\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.pdb
+C:\Users\Luutey\Desktop\NSE (optimized)\CoopEVotingSystem (sup)\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Desktop\NSE (optimized)\CoopEVotingSystem (sup)\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.pdb
+C:\Users\Luutey\Desktop\NSE (optimized)\CoopEVotingSystem (sup)\ChinaReaderMifareLib\bin\Debug\MifareLibrary.dll
+C:\Users\Luutey\Desktop\NSE (optimized)\CoopEVotingSystem (sup)\ChinaReaderMifareLib\bin\Debug\MifareLibrary.pdb
+C:\Users\Luutey\Desktop\NSE (optimized)\CoopEVotingSystem (sup)\ChinaReaderMifareLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Luutey\Desktop\NSE (optimized)\CoopEVotingSystem (sup)\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Desktop\NSE (optimized)\CoopEVotingSystem (sup)\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.pdb
+C:\Users\Luutey\Desktop\NSE (optimized)\NigComSatCoperative (sup)\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Desktop\NSE (optimized)\NigComSatCoperative (sup)\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.pdb
+C:\Users\Luutey\Desktop\NSE (optimized)\NigComSatCoperative (sup)\ChinaReaderMifareLib\bin\Debug\MifareLibrary.dll
+C:\Users\Luutey\Desktop\NSE (optimized)\NigComSatCoperative (sup)\ChinaReaderMifareLib\bin\Debug\MifareLibrary.pdb
+C:\Users\Luutey\Desktop\NSE (optimized)\NigComSatCoperative (sup)\ChinaReaderMifareLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Luutey\Desktop\NSE (optimized)\NigComSatCoperative (sup)\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Desktop\NSE (optimized)\NigComSatCoperative (sup)\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration\ChinaReaderMifareLib\bin\Debug\MifareLibrary.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration\ChinaReaderMifareLib\bin\Debug\MifareLibrary.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration\ChinaReaderMifareLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\Debug\MifareLibrary.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\bin\Debug\MifareLibrary.pdb
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.dll
+C:\Users\Luutey\Documents\Visual Studio 2010\Projects\EvotingRegistration - Version 1.0.1\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.pdb
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.dll
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.pdb
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\bin\Debug\MifareLibrary.dll
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\bin\Debug\MifareLibrary.pdb
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.csprojAssemblyReference.cache
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.csproj.CoreCompileInputs.cache
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.csproj.CopyComplete
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.dll
+C:\Users\HENRIO\Desktop\EvotingRegistration - Version 2.1.0_2015\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.pdb
+C:\Users\HENRIO\source\repos\VisitorsManagement\VisitorsManagement\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.dll
+C:\Users\HENRIO\source\repos\VisitorsManagement\VisitorsManagement\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.pdb
+C:\Users\HENRIO\source\repos\VisitorsManagement\VisitorsManagement\ChinaReaderMifareLib\bin\Debug\MifareLibrary.dll
+C:\Users\HENRIO\source\repos\VisitorsManagement\VisitorsManagement\ChinaReaderMifareLib\bin\Debug\MifareLibrary.pdb
+C:\Users\HENRIO\source\repos\VisitorsManagement\VisitorsManagement\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.csproj.CoreCompileInputs.cache
+C:\Users\HENRIO\source\repos\VisitorsManagement\VisitorsManagement\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.csproj.CopyComplete
+C:\Users\HENRIO\source\repos\VisitorsManagement\VisitorsManagement\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.dll
+C:\Users\HENRIO\source\repos\VisitorsManagement\VisitorsManagement\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.pdb
+C:\Users\HENRIO\source\repos\VisitorsManagement\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.dll
+C:\Users\HENRIO\source\repos\VisitorsManagement\ChinaReaderMifareLib\bin\Debug\ChinaReaderMifareLib.pdb
+C:\Users\HENRIO\source\repos\VisitorsManagement\ChinaReaderMifareLib\bin\Debug\MifareLibrary.dll
+C:\Users\HENRIO\source\repos\VisitorsManagement\ChinaReaderMifareLib\bin\Debug\MifareLibrary.pdb
+C:\Users\HENRIO\source\repos\VisitorsManagement\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.csprojAssemblyReference.cache
+C:\Users\HENRIO\source\repos\VisitorsManagement\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.csproj.CoreCompileInputs.cache
+C:\Users\HENRIO\source\repos\VisitorsManagement\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.csproj.CopyComplete
+C:\Users\HENRIO\source\repos\VisitorsManagement\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.dll
+C:\Users\HENRIO\source\repos\VisitorsManagement\ChinaReaderMifareLib\obj\Debug\ChinaReaderMifareLib.pdb
