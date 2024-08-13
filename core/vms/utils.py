@@ -11,7 +11,8 @@ import logging
 import requests
 import pyrebase
 from core import settings
-from distutils.command import build
+from distutils.command.build import build
+
 
 # from vms.myViews import test_api_request
 from .models import Visitor
@@ -62,7 +63,7 @@ def generate_qr_code(visitor):
     # Generate QR code content based on visitor information
     qr_code_content = (
         f"Name: {visitor.visitor_name}\n"
-        f"Mobile: {visitor.mobile}\n"
+        f"Mobile: {visitor.phone_number}\n"
         f"Email: {visitor.email_address}\n"
         f"Host Employee: {visitor.whom_to_see}\n"
         f"Department: {visitor.dept}\n"
@@ -196,7 +197,7 @@ def sendWhatApps_message(visitor,path):
     username = "tidnigcomsat@gmail.com"  
     api_key = "d017cf5340ae6c0b2a0db7cc04a6252f905abc3c"
     # Recipient phone number (including country code)
-    recipient = visitor.mobile.as_e164
+    recipient = visitor.phone_number
 
     # Subject (not shown to recipient)
     subject = "Visitors Mgt Team"

@@ -3,9 +3,8 @@ from django .utils.timezone import now
 from django.db import models
 
 class Employee(models.Model):
-    employee_id = models.IntegerField(primary_key=True)
+    employee_id = models.AutoField(primary_key=True)
     employee_name = models.CharField(max_length=200, verbose_name='Employee Name')
-    # whom_to_see = models.ManyToManyField("Visitor", related_name='employee')
     dept_name = models.CharField(max_length=100, verbose_name='Department Name')
     unit = models.CharField(max_length=100, blank=True, null=True)
     date_of_employment = models.DateTimeField(default=now, blank=True, null=True, verbose_name='Date of Employment')
@@ -21,7 +20,7 @@ class Employee(models.Model):
         return ', '.join([employee.employee_name for employee in self.employees.all()])
 
 class Visitor(models.Model):
-    visitor_id = models.IntegerField(primary_key=True)
+    visitor_id = models.AutoField(primary_key=True)
     visitor_name = models.CharField(max_length=150, verbose_name='Visitor Name')
     phone_number = models.CharField(max_length=15, unique=True, verbose_name="Phone Number", help_text="Phone number")
     email_address = models.EmailField(max_length=200, unique=True, verbose_name='Email Address', help_text='Please provide a valid email address')
@@ -51,6 +50,12 @@ class Visitor(models.Model):
 class Pending_Visitor(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.ForeignKey(Visitor, on_delete=models.CASCADE, related_name='Pending_Visitor')
+    status_choices = [
+        ('PENDING', 'Pending Approval'),
+        ('APPROVED', 'Approved'),
+    ]
+    status = models.CharField(max_length=10, choices=status_choices, default='PENDING')
+
 
     def __str__(self) -> str:
         return self.name

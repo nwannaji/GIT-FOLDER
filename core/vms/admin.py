@@ -5,26 +5,18 @@ from .models import Employee,Visitor
 # Register your models here.
 class EmployeeAdmin (admin.ModelAdmin):
     fieldsets =[
-        ('EmployeeDetails', {'fields':['employee_id','employee_name','dept_name','unit','email_address','phone_number',
+        ('EmployeeDetails', {'fields':['employee_name','dept_name','unit','email_address','phone_number',
                                        'is_Admin','is_contract_staff']}),
     ]
     readonly_fields = ('date_of_employment',)
-    list_display = ('employee_id','employee_name','dept_name','unit','email_address','phone_number','is_Admin','is_contract_staff',)
-
-# class VisitorForm(forms.ModelForm):
-#     class Meta:
-#         model = Visitor
-#         fields = '__all__'
-#         widgets ={
-#             'date_of_visit':forms.DateInput(attrs={'type':'date'})
-#         }
+    list_display = ('employee_name','dept_name','unit','email_address','phone_number','is_Admin','is_contract_staff',)
 
 class VisitorAdmin(admin.ModelAdmin):
     fieldsets = [
-        ('VisitorDetails', {'fields':['visitor_id','visitor_name','phone_number','email_address','organization','dept','whom_to_see',
+        ('VisitorDetails', {'fields':['visitor_name','phone_number','email_address','organization','dept','whom_to_see',
                                       'is_official','is_invited','first_timer','date_of_visit']}),
     ]
-    readonly_fields = ('visitor_id','visitor_name','phone_number','email_address','organization','dept','whom_to_see','is_official',
+    readonly_fields = ('visitor_name','phone_number','email_address','organization','dept','whom_to_see','is_official',
                        'is_invited','first_timer','date_of_visit',)
     list_display = ('visitor_name','phone_number','email_address','organization','dept','is_official',
                        'is_invited','first_timer','date_of_visit',)
