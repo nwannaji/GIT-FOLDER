@@ -38,4 +38,29 @@ class Visitor(models.Model):
 
     def __str__(self) -> str:
         return self.visitor_name
+    
+    # Retrieve the names of employees the visitor wants to see.
+    def get_employee_name(self):
+         return ','.join([ employee.employee_name for employee in self.whom_to_see.all()])
+    
+    # Retrieve the departments of employees the visitor wants to see.
+    def get_department_name(self):
+         return ', '.join([employee.dept for employee in self.whom_to_see.all()])
+
+    
+class Pending_Visitor(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.ForeignKey(Visitor, on_delete=models.CASCADE, related_name='Pending_Visitor')
+
+    def __str__(self) -> str:
+        return self.name
+
+class CheckIn_Visitor(models.Model):
+    id = models.AutoField(primary_key=True)
+    visitor_name = models.ForeignKey(Visitor, on_delete=models.CASCADE, related_name='Visitor_To_CheckIn')
+    time_In = models.DateTimeField()
+    time_Out = models.DateTimeField()
+    is_pending = models.BooleanField(default=True)
+    is_approved = models.BooleanField(default=False)
+    approved_by = models.CharField(max_length=150,blank=True,null=False)
 

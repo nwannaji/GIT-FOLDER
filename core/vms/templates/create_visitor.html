@@ -1,0 +1,384 @@
+{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+{% block content %}
+    <!-- Visitor Modal -->
+    <div class="modal fade" id="visitorModal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5 text-primary" id="modal-title">Visitor's Details</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    {% if messages %}
+                        <ul class="list-group">
+                            {% for message in messages %}
+                                <li class="text-success alert alert-{{ message.tags }}">{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+                <div class="modal-body">
+                    <form action="{% url 'create_visitor' %}" method="POST">
+                        {% csrf_token %}
+                        <div class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-6">
+                                <label for="visitor_name" class="form-label text-primary">Visitor's Name</label>
+                                <input type="text" id="visitor_name" name="visitor_name" class="form-control border-primary" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone_number" class="form-label text-primary">(Int'l) Phonenumber</label>
+                                <input type="text" id="phone_number" name="phone_number" class="form-control border-primary" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email_address" class="form-label text-primary">Email Address</label>
+                                <input type="text" id="email_address" name="email_address" class="form-control border-primary" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="organization" class="form-label text-primary">organization</label>
+                                <input type="text" id="organization" name="organization" class="form-control border-primary" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="dept_name" class="form-label text-primary"> Host Department</label>
+                                <select id="dept_name" name="dept_name" class="form-select border-primary" required>
+                                    <option value="" selected disabled>Select Department</option>
+                                    <option value="MDs Office">MDs Office</option>
+                                    <option value="Human Resource">Human Resource</option>
+                                    <option value="Finance & Admin">Finance & Admin</option>
+                                    <option value="Accounts">Accounts</option>
+                                    <option value="Registry">Registry</option>
+                                    <option value="Budget">Budget</option>
+                                    <option value="Satellite Control Center">Satellite Control Center</option>
+                                    <option value="Network Operating Center">Network Operating Center</option>
+                                    <option value="Broad Band Services">Broad Band Services</option>
+                                    <option value="Innovation">Innovation</option>
+                                    <option value="Navigation">Navigation</option>
+                                    <option value="Procurement">Procurement</option>
+                                    <option value="Legal">Legal</option>
+                                    <option value="Facility">Facility</option>
+                                    <option value="ISSD">ISSD</option>
+                                    <option value="IT">IT</option>    
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="whom_to_see" class="form-label text-primary">Whom To See</label>
+                                <input type="text" id="whom_to_see" name="whom_to_see" class="form-control border-primary" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="purpose_of_visit" class="form-label text-primary">Purpose of Visit</label>
+                                <input type="text" id="purpose_of_visit" name="purpose_of_visit" class="form-control border-primary" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="date_of_visit" class="form-label text-primary">Date of Visit</label>
+                                <input type="date" id="date_of_visit" name="date_of_visit" class="form-control border-primary" required>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="invited" class="form-label text-primary">Expected?</label>
+                                <input type="checkbox" id="invited" name="invited">
+                            </div> 
+                            <div class="col-md-3 form-group">
+                                <label for="first_timer" class="form-label text-primary">First Timer?</label>
+                                <input type="checkbox" id="first_timer" name="first_timer">
+                              </div>       
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+                <script>
+                    const invitedCheckbox = document.getElementById('invited');
+                    const firstTimerCheckbox = document.getElementById('first_timer');
+                
+                    invitedCheckbox.addEventListener('change', function() {
+                        if (this.checked) {
+                            firstTimerCheckbox.checked = false;
+                        }
+                    });
+                
+                    firstTimerCheckbox.addEventListener('change', function() {
+                        if (this.checked) {
+                            invitedCheckbox.checked = false;
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <!-- End Visitor Modal -->
+
+    <!-- Display Card -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 mb-lg-0 mb-4">
+                <div class="card h-100 p-3">
+                    <div class="card-body p-3 rounded-top rounded-bottom">
+                        <div class="d-flex flex-column h-100">
+                            <p class="mb-1 pt-2 fw-bold text-primary"><i class="fas fa-users"></i> Visitors</p>
+                            <input type="text" id="searchInput" class="form-control mb-3  text-primary" placeholder="Search...">
+                            <div class="table-wrapper">
+                                <table id="table_section" class="table table-hover table-responsive">
+                                    <thead class="text-primary">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">NAME</th>
+                                            <th scope="col">ORGANIZATION</th>
+                                            <th scope="col">VISIT DEPT</th>
+                                            <th scope="col">WHOM TO SEE</th>
+                                            <th scope="col">PURPOSE</th>
+                                            <th scope="col">DATE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tableBody">
+                                        {% for v_data in visitors %}
+                                            <!-- {% if v_data.visitor_id %} -->
+                                                <tr>
+                                                    <td class="text-primary">{{ forloop.counter }}</td>
+                                                    <td class="text-primary">{{ v_data.visitor_name }}</td>
+                                                    <td class="text-primary">{{ v_data.organization }}</td>
+                                                    <td class="text-primary">{{ v_data.dept_name }}</td>
+                                                    <td class="text-primary">{{ v_data.whom_to_see}}</td>
+                                                    <td class="text-primary">{{ v_data.purpose_of_visit }}</td>
+                                                    <td class="text-primary">{{ v_data.date_of_visit }}</td>
+                                                </tr>
+                                            <!-- {% endif %} -->
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                                <!-- Paginator control -->
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        {% if page_obj.has_previous %}
+                                        <li class="page-item">
+                                         <a class="page-link" href="?page={{ page_obj.previous_page_number }}" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                         </a>
+                                        </li>
+                                        {% else %}
+                                        <li class="page-item disabled">
+                                        <a class="page-link" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                        </li>
+                                        {% endif %}
+
+                                        {% for num in paginator.page_range %}
+                                        {% if page_obj.number == num %}
+                                        <li class="page-item active"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
+                                        {% else %}
+                                        <li class="page-item"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
+                                        {% endif %}
+                                        {% endfor %}
+
+                                        {% if page_obj.has_next %}
+                                        <li class="page-item">
+                                            <a class="page-link" href="?page={{ page_obj.next_page_number }}" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                        {% else %}
+                                        <li class="page-item disabled">
+                                            <a class="page-link" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                        {% endif %}
+                                    </ul>
+                                </nav>
+                                <!--End Paginator control -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <style>
+                .table-wrapper {
+                    overflow-y: auto;
+                    max-height: 400px; /* Adjust height as needed */
+                }
+            </style>
+            
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    document.getElementById("searchInput").addEventListener("keyup", function() {
+                        const searchText = this.value.toLowerCase();
+                        const rows = document.getElementById("tableBody").getElementsByTagName("tr");
+                        Array.from(rows).forEach(function(row) {
+                            const cells = row.getElementsByTagName("td");
+                            let found = false;
+                            Array.from(cells).forEach(function(cell) {
+                                const text = cell.textContent.toLowerCase();
+                                if (text.includes(searchText)) {
+                                    found = true;
+                                }
+                            });
+                            if (found) {
+                                row.style.display = "";
+                            } else {
+                                row.style.display = "none";
+                            }
+                        });
+                    });
+                });
+            </script>
+            
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6 mb-lg-0 mb-4">
+                <div class="card h-100 p-3">
+                    <div class="card-body rounded-top rounded-bottom">
+                        <div class="d-flex flex-column h-100">
+                            <p class="mb-1 pt-2 fw-bold text-primary"><i class="fas fa-users"></i> Employees</p>
+                            <input type="text" id="employeeSearchInput" class="form-control mb-3 border-primary text-primary" placeholder="Search...">
+                            <div class="table-wrapper">
+                                <table id="employeeTable" class="table table-hover table-responsive text-primary">
+                                    <thead class="font-weight-bold">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">EMPLOYEE NAME</th>
+                                            <th scope="col">DEPARTMENT</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="employeeTableBody">
+                                        {% for emp in employees %}
+                                            <tr>
+                                                <td class="text-primary">{{ forloop.counter }}</td>
+                                                <td class="text-primary">{{ emp.employee_name }}</td>
+                                                <td class="text-primary">{{ emp.dept_name }}</td>
+                                            </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                                <!-- Paginator control -->
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        {% if employee_page_obj.has_previous %}
+                                        <li class="page-item">
+                                         <a class="page-link" href="?page={{ employee_page_obj.previous_page_number }}" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                         </a>
+                                        </li>
+                                        {% else %}
+                                        <li class="page-item disabled">
+                                        <a class="page-link" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                        </li>
+                                        {% endif %}
+                                        
+                                        {% for num in employee_paginator.page_range %}
+                                        {% if employee_page_obj.number == num %}
+                                        <li class="page-item active"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
+                                        {% else %}
+                                        <li class="page-item"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
+                                        {% endif %}
+                                        {% endfor %}
+
+                                        {% if employee_page_obj.has_next %}
+                                        <li class="page-item">
+                                            <a class="page-link" href="?page={{ employee_page_obj.next_page_number }}" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                        {% else %}
+                                        <li class="page-item disabled">
+                                            <a class="page-link" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                        {% endif %}
+                                    </ul>
+                                </nav>
+                                <!--End Paginator control -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <style>
+                    .table-wrapper {
+                        overflow-y: auto;
+                        max-height: 400px; /* Adjust height as needed */
+                    }
+                </style>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        document.getElementById("employeeSearchInput").addEventListener("keyup", function() {
+                            const searchText = this.value.toLowerCase();
+                            const rows = document.getElementById("employeeTableBody").getElementsByTagName("tr");
+                            Array.from(rows).forEach(function(row) {
+                                const cells = row.getElementsByTagName("td");
+                                let found = false;
+                                Array.from(cells).forEach(function(cell) {
+                                    const text = cell.textContent.toLowerCase();
+                                    if (text.includes(searchText)) {
+                                        found = true;
+                                    }
+                                });
+                                if (found) {
+                                    row.style.display = "";
+                                } else {
+                                    row.style.display = "none";
+                                }
+                            });
+                        });
+                    });
+                </script>
+                
+            </div>
+            <div class="col-lg-6 mb-lg-0 mb-4">
+                <div class="card h-100 p-3">
+                    <div class="card-body">
+                        <p class="mb-1 pt-2 fw-bold text-primary"><i class="fas fa-section"></i> Analytics for Visitor Percentage by Department</p>
+                        <canvas id="departmentPieChart" width="50" height="50"></canvas>
+                        <script>
+                             var departmentPercentages = JSON.parse('{{ department_percentages_json|escapejs|safe }}');
+                              console.log(departmentPercentages)
+                            var ctx = document.getElementById('departmentPieChart').getContext('2d');
+                            var departmentPieChart = new Chart(ctx, {
+                                type: 'pie',
+                                data: {
+                                    labels: Object.keys(departmentPercentages).map(String),
+                                    datasets: [{
+                                        label: 'Visitor Percentage by Department',
+                                        data: Object.values(departmentPercentages),
+                                        backgroundColor: [
+                                            'rgba(255, 99, 132, 0.6)',
+                                            'rgba(54, 162, 235, 0.6)',
+                                            'rgba(255, 206, 86, 0.6)',
+                                            'rgba(75, 192, 192, 0.6)',
+                                            'rgba(153, 102, 255, 0.6)',
+                                            'rgba(255, 159, 64, 0.6)'
+                                        ],
+                                        borderWidth: 1
+                                    }]
+                                },
+                                options: {
+                                    responsive: true,
+                                    plugins: {
+                                        legend: {
+                                            position: 'top',
+                                        },
+                                        title: {
+                                            display: true,
+                                            // text: 'Visitor Percentage by Department'
+                                        }
+                                    }
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </html> 
+{% endblock %}

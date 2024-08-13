@@ -76,6 +76,19 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# ===========================================================
+# Initialize Firebase
+FIREBASE_CONFIG = {
+    "apiKey": "AIzaSyD6EIlZLNCH4pS0BYM-t5twdt610vZ9Zpc",
+    "authDomain": "image-cryptography-2e8bc.firebaseapp.com",
+    "databaseURL": "",
+    "projectId": "image-cryptography-2e8bc",
+    "storageBucket": "image-cryptography-2e8bc.appspot.com",
+    "messagingSenderId": "381842348293",
+    "appId": "1:381842348293:web:a76777c95bd7e71d197f6c",
+    "measurementId": "G-1VJYYTNL1C"
+}
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',

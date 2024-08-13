@@ -5,5 +5,7 @@ from .import views
 
 
 urlpatterns =[
-    path('',views.index, name='index')
+    path('', views.dashboard, name='dashboard'),
+    # path('create_visitor/', views.create_visitor, name='create_visitor'),
+
 ]
