@@ -3,7 +3,7 @@ import os
 import json
 from urllib.error import HTTPError
 from django.http import HttpResponse
-from django.shortcuts import redirect
+from django.shortcuts import get_object_or_404, redirect
 import qrcode
 import random
 import string
@@ -15,7 +15,7 @@ from distutils.command.build import build
 
 
 # from vms.myViews import test_api_request
-from .models import Visitor
+from .models import Employee, Visitor
 from django.conf import settings
 
 from email.mime.multipart import MIMEMultipart
@@ -65,7 +65,7 @@ def generate_qr_code(visitor):
         f"Name: {visitor.visitor_name}\n"
         f"Mobile: {visitor.phone_number}\n"
         f"Email: {visitor.email_address}\n"
-        f"Host Employee: {visitor.whom_to_see}\n"
+        f"Host Employee: {get_object_or_404(Employee.employee_name)}\n"
         f"Department: {visitor.dept}\n"
         f"Organization: {visitor.organization}"
     )  

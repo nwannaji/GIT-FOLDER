@@ -47,7 +47,7 @@ def schedule_visit(request):
             employee_to_see = get_object_or_404(Employee,employee_name=whom_to_see)
         except Employee.DoesNotExist:
             messages.error(request, 'Employee not found.')
-            return redirect(reverse('schedule_visit'))
+            return render(request,'error_page.html')
 
         # Create the Visitor object
         visitor_data = {
@@ -83,9 +83,12 @@ def schedule_visit(request):
 
         messages.success(request, 'Visitor successfully created.')
         return redirect(reverse('dashboard'))
+    else:
+        return render(reverse('error_page'))
 
-    # Handle GET request or render the form template
-    return render(request, 'your_template.html')  # Replace 'your_template.html' with your actual template
+@csrf_exempt
+def error_message_page(request):
+    return render(request,'error_page.html')
 
 
 @csrf_exempt        
