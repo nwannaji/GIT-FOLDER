@@ -3,8 +3,9 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.contrib import messages
 import pytz
+from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
-from .utils import sendWhatApps_message,generate_qr_code,upload_qr_code_to_firebase
+from .utils import  sendVisitor_WhatApps_message, sendEmployee_whatApps_message,reject_visit, send_approved_or_decline_visit,generate_qr_code,upload_qr_code_to_firebase
 from .models import CheckIn_Visitor, Pending_Visitor, Visitor,Employee
 
 def dashboard(request):
@@ -73,7 +74,8 @@ def schedule_visit(request):
         # Generate QR code, upload to Firebase, and send WhatsApp message
         qr_code_path = generate_qr_code(visitor)
         qr_code_url = upload_qr_code_to_firebase(qr_code_path, qr_code_path)
-        sendWhatApps_message(visitor, qr_code_url)
+        sendVisitor_WhatApps_message(visitor, qr_code_url)
+        sendEmployee_whatApps_message(visitor,employee_to_see)
 
         # Save visitor information in Pending_Approval_List
         Pending_Visitor.objects.create(
@@ -90,29 +92,41 @@ def schedule_visit(request):
 def error_message_page(request):
     return render(request,'error_page.html')
 
-
-@csrf_exempt        
+@csrf_exempt    
+@login_required(login_url='admin:login')   
 def checkIn(request):
     if request.method == 'POST':
         visitor_id = request.POST.get('visitor_id')
         visitor = Visitor.objects.filter(pk=visitor_id).first()
+
         if visitor:
             # Check if visitor is already in pending approval list
-            pending_visit = Pending_Visitor.objects.filter(name_id=visitor)
-            if pending_visit.exists() and pending_visit.first().status == 'PENDING' and request.POST.get('resubmitted'):
-                pending_visit.update(status='APPROVED')
-            elif pending_visit.exists() and pending_visit.first().status == 'APPROVED' and request.POST.get('resubmitted'):
-                pending_visit.update(status='CHECK-OUT')
-                return redirect('CHECK-IN')  # Redirect to refresh the page
+            pending_visit = Pending_Visitor.objects.filter(name=visitor)
+            if pending_visit.exists():
+                pending_visit_instance = pending_visit.first()
+                if pending_visit_instance.status == 'PENDING' and request.POST.get('resubmitted'):
+                    pending_visit.update(status='APPROVED')
+                elif pending_visit_instance.status == 'APPROVED' and request.POST.get('resubmitted'):
+                    pending_visit.update(status='CHECK-OUT')
+                    return redirect('checkIn')  # Redirect to refresh the page
+
         else:
+            # Visitor not found, display an error message
             return render(request, 'check_In.html', {'messages': 'Visitor not found.'})
+
     # Fetch all approved, pending, and checked out visitors
     approved_visitors = Pending_Visitor.objects.filter(status='APPROVED')
     pending_visitors = Pending_Visitor.objects.filter(status='PENDING')
     checkout_visitors = Pending_Visitor.objects.filter(status='CHECK-OUT')
-    return render(request, 'check_In.html', {'approved_visitors': approved_visitors, 'pending_visitors': pending_visitors, 'checkout_visitors': checkout_visitors})
+
+    return render(request, 'check_In.html', {
+        'approved_visitors': approved_visitors,
+        'pending_visitors': pending_visitors,
+        'checkout_visitors': checkout_visitors
+    })
 
 @csrf_exempt
+@login_required(login_url='admin:login')
 def update_checkin_visitorModel(request):
     dt = datetime.now(pytz.timezone('Africa/Lagos'))
     formatted_time = dt.strftime('%Y-%m-%d %H:%M:%S %z')
@@ -148,4 +162,9 @@ def update_checkin_visitorModel(request):
         # Handle the case when there's no visitor
         pass
     return redirect('check_In')  # Redirect to refresh the page
+
+def decline_visit(request, visitor_id):
+
+    return render(request,'check_In.html')
+    
 

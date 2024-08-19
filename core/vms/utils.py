@@ -11,7 +11,7 @@ import logging
 import requests
 import pyrebase
 from core import settings
-from distutils.command.build import build
+from setuptools.command.build import build
 
 
 # from vms.myViews import test_api_request
@@ -139,41 +139,6 @@ def build_email_message(sender_email, visitor, subject, body):
     message.attach(image_part)
 
   return message.as_string().encode('utf-8')
-
-
-def send_email(request, visitor, qr_code_path=None):
-  """Sends an email with visitor information and optionally a QR code attachment."""
-  if request.method == 'POST':
-    visitor_name = visitor.visitor_name
-    subject = "VMS TEAM"
-    organization_name = visitor.organization
-    body = f"""Dear {visitor_name},
-
-    This email is sent to you because you indicated interest to visit {organization_name}.
-    A QR Code image embedded with your basic details has been sent to the email address you provided.
-    Please make this available for scan at the entrance of your host.
-    Thanks,
-    @VMSTeam"""
-
-    # Validate and get email data
-    sender_email = settings.EMAIL_USERNAME
-    recipient_email = visitor.email_address
-
-    # Get authorized credentials
-    credentials = get_credentials()
-    http = credentials.authorize(Http())
-    service = build("gmail", "v1", http=http)
-
-    # Build email message
-    raw_message = base64.urlsafe_b64encode(build_email_message(sender_email, recipient_email, subject, body, 
-                                                                qr_code_path and get_qr_code_data(qr_code_path))).decode()
-    # Send email
-    try:
-      body = {'raw': raw_message}
-      service.users().messages().send(userId="me", body=body).execute()
-      return HttpResponse("Email sent successfully!")
-    except HTTPError as error:
-      return HttpResponse(f"An error occurred: {error}")
     
     
 def upload_qr_code_to_firebase(img_name, img_data):
@@ -192,7 +157,7 @@ def upload_qr_code_to_firebase(img_name, img_data):
         # Handle any exceptions and raise them
         raise e
 
-def sendWhatApps_message(visitor,path):
+def sendVisitor_WhatApps_message(visitor,path):
    # Replace with your eBulkSMS credentials
     username = "tidnigcomsat@gmail.com"  
     api_key = "d017cf5340ae6c0b2a0db7cc04a6252f905abc3c"
@@ -231,6 +196,91 @@ def sendWhatApps_message(visitor,path):
         print("Message sent successfully!")
     else:
         print(f"Error sending message: {response.text}")
+
+def sendEmployee_whatApps_message(visitor, employee):
+    # Replace with your eBulkSMS credentials
+    username = "tidnigcomsat@gmail.com"
+    api_key = "d017cf5340ae6c0b2a0db7cc04a6252f905abc3c"
+
+    # Recipient phone number (including country code)
+    recipient = employee.phone_number
+
+    # Subject (not shown to recipient)
+    subject = "Visitor Request Notification"
+
+    # Your message content
+    message = f"""
+    Dear {employee.employee_name},
+
+    This is to inform you that {visitor.visitor_name} from {visitor.organization} has requested to visit you in the {employee.dept_name} department.
+
+    Visit Details:
+    - Visitor: {visitor.visitor_name}
+    - Organization: {visitor.organization}
+    - Phone number: {visitor.phone_number}
+    - Scheduled Visit: {visitor.date_of_visit.strftime('%Y-%m-%d %H:%M:%S %p')}
+    Please if this visit is convenient for you. Login into the VMS portal: 127.0.0.1:8000/checkIn/ to approve it.
+    Thank you for your cooperation\n.
+  
+    Best regards,
+    NigComSat Visitors Mgt Team
+    """
+
+def reject_visit(request, visitor_id):
+    # Fetch the visitor details based on visitor_id
+    visitor = get_object_or_404(Visitor, id=visitor_id)
+    
+    # Send decline message
+    send_approved_or_decline_visit(visitor, 'DECLINED')
+    
+    return HttpResponse("Your visit has been declined.")
+
+def send_approved_or_decline_visit(visitor,visit_status):
+      # Replace with your eBulkSMS credentials
+    username = "tidnigcomsat@gmail.com"
+    api_key = "d017cf5340ae6c0b2a0db7cc04a6252f905abc3c"
+
+    recipient = visitor.phone_number
+     # Subject (not shown to recipient)
+    subject = "Visitors Mgt Team"
+
+    # Determine message content based on visit status
+    if visit_status.upper() == 'APPROVED':
+        message = f"""Dear {visitor.visitor_name},\n\nYour visit to {visitor.dept} of NigComSat LTD has been approved.\n\nPlease ensure that you follow all necessary protocols.\n\nThanks,\nNigComSat Visitors Mgt Team"""
+    elif visit_status.upper() == 'DELINED':
+        message = f"""Dear {visitor.visitor_name},\n\nWe regret to inform you that your visit to {visitor.dept} of NigComSat LTD has been declined.\n\nIf you believe this is a mistake, please contact us.\n\nThanks,\nNigComSat Visitors Mgt Team"""
+    else:
+        raise ValueError('Invalid visit status. Must be "APPROVED" or "DECLINED".')
+    
+    # Construct the JSON data
+    data = {
+        "WA": {
+            "auth": {
+                "username": username,
+                "apikey": api_key,
+            },
+            "message": {
+                "subject": subject,
+                "messagetext": message,
+            },
+            "recipients": [
+                recipient
+            ]
+        }
+    }
+    # Set the headers
+    headers = {"Content-Type": "application/json"}
+
+    # Send the POST request
+    url = "https://api.ebulksms.com/sendwhatsapp.json"
+    response = requests.post(url, headers=headers, json=data)
+
+    # Check for successful response
+    if response.status_code == 200:
+        print(f"Message sent successfully to {recipient}!")
+    else:
+        print(f"Error sending message to {recipient}: {response.text}")
+    
 
 
 

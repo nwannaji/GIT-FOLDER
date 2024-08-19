@@ -114,6 +114,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+LOGIN_URL = 'admin:login'  # Redirect to Django admin login
+
 
 
 # Internationalization
