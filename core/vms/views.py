@@ -3,9 +3,10 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.contrib import messages
 import pytz
+from django.utils.timezone import now
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
-from .utils import  sendVisitor_WhatApps_message, sendEmployee_whatApps_message,reject_visit, send_approved_or_decline_visit,generate_qr_code,upload_qr_code_to_firebase
+from .utils import  send_employee_whatsApp_message, send_visitor_whatsApp_message,reject_visit, send_approved_or_decline_visit,generate_qr_code,upload_qr_code_to_firebase
 from .models import CheckIn_Visitor, Pending_Visitor, Visitor,Employee
 
 def dashboard(request):
@@ -27,13 +28,14 @@ def dashboard(request):
             'is_official':visitor.is_official,
             'is_invited':visitor.is_invited,
             'first_timer':visitor.first_timer,
-            'date_of_visit':visitor.date_of_visit.date
+            'date_of_visit':visitor.date_of_visit or now().date()
         })
     # Pass the visitor data to the template
     context = {
         'visitor_data_list': visitor_data_list,
     }
     return render(request, 'dashboard.html', context)
+
 @csrf_exempt
 def schedule_visit(request):
     if request.method == 'POST':
@@ -41,16 +43,13 @@ def schedule_visit(request):
         is_official = request.POST.get('is_official') == 'on'
         is_invited = request.POST.get('invited') == 'on'
         first_timer = request.POST.get('first_timer') == 'on'
+                
+            # Get the name of the employee the visitor wants to see
+        get_employee_name = request.POST.get('whom_to_see')
         
-        # Retrieve the employee object whom the visitor wants to see
-        whom_to_see = request.POST.get('whom_to_see')
-        try:
-            employee_to_see = get_object_or_404(Employee,employee_name=whom_to_see)
-        except Employee.DoesNotExist:
-            messages.error(request, 'Employee not found.')
-            return render(request,'error_page.html')
+        # Retrieve the employee object based on the employee name
+        employee = Employee.objects.get(employee_name=get_employee_name)
 
-        # Create the Visitor object
         visitor_data = {
             'visitor_name': request.POST.get('visitor_name'),
             'phone_number': request.POST.get('phone_number'),
@@ -59,23 +58,28 @@ def schedule_visit(request):
             'otp': request.POST.get('otp'),
             'organization': request.POST.get('organization'),
             'dept': request.POST.get('dept'),
-            'is_official': is_official,
-            'comments':request.POST.get('comments'),
-            'is_invited': is_invited,
-            'first_timer': first_timer,
+            'is_official': request.POST.get('is_official') == 'on',
+            'comments': request.POST.get('comments'),
+            'is_invited': request.POST.get('invited') == 'on',
+            'first_timer': request.POST.get('first_timer') == 'on',
             'date_of_visit': request.POST.get('date_of_visit'),
         }
 
-        # Create and save the Visitor
+        # Create the visitor instance
         visitor = Visitor.objects.create(**visitor_data)
-        visitor.whom_to_see.add(employee_to_see)
+
+        # Add the employee to the whom_to_see relationship
+        visitor.whom_to_see.add(employee)  # Add the employee object directly
+
+        # Save the visitor instance
         visitor.save()
 
+
         # Generate QR code, upload to Firebase, and send WhatsApp message
-        qr_code_path = generate_qr_code(visitor)
+        qr_code_path = generate_qr_code(visitor,employee.employee_name)
         qr_code_url = upload_qr_code_to_firebase(qr_code_path, qr_code_path)
-        sendVisitor_WhatApps_message(visitor, qr_code_url)
-        sendEmployee_whatApps_message(visitor,employee_to_see)
+        send_visitor_whatsApp_message(visitor, qr_code_url)
+        send_employee_whatsApp_message(employee,visitor)
 
         # Save visitor information in Pending_Approval_List
         Pending_Visitor.objects.create(
@@ -86,20 +90,22 @@ def schedule_visit(request):
         messages.success(request, 'Visitor successfully created.')
         return redirect(reverse('dashboard'))
     else:
-        return render(reverse('error_page'))
+         return render(request,"error_page.html")
 
 @csrf_exempt
 def error_message_page(request):
     return render(request,'error_page.html')
 
-@csrf_exempt    
-@login_required(login_url='admin:login')   
+@csrf_exempt
+@login_required(login_url='admin:login')
 def checkIn(request):
+    context = {}
     if request.method == 'POST':
         visitor_id = request.POST.get('visitor_id')
         visitor = Visitor.objects.filter(pk=visitor_id).first()
 
         if visitor:
+            visitor_name = visitor.visitor_name
             # Check if visitor is already in pending approval list
             pending_visit = Pending_Visitor.objects.filter(name=visitor)
             if pending_visit.exists():
@@ -109,21 +115,18 @@ def checkIn(request):
                 elif pending_visit_instance.status == 'APPROVED' and request.POST.get('resubmitted'):
                     pending_visit.update(status='CHECK-OUT')
                     return redirect('checkIn')  # Redirect to refresh the page
-
+                
+            # Add visitor_name to the context for rendering
+            context['visitor_name'] = visitor_name
         else:
             # Visitor not found, display an error message
-            return render(request, 'check_In.html', {'messages': 'Visitor not found.'})
+            context['messages'] = 'Visitor not found.'
 
     # Fetch all approved, pending, and checked out visitors
-    approved_visitors = Pending_Visitor.objects.filter(status='APPROVED')
-    pending_visitors = Pending_Visitor.objects.filter(status='PENDING')
-    checkout_visitors = Pending_Visitor.objects.filter(status='CHECK-OUT')
-
-    return render(request, 'check_In.html', {
-        'approved_visitors': approved_visitors,
-        'pending_visitors': pending_visitors,
-        'checkout_visitors': checkout_visitors
-    })
+    context['approved_visitors'] = Pending_Visitor.objects.filter(status='APPROVED')
+    context['pending_visitors'] = Pending_Visitor.objects.filter(status='PENDING')
+    context['checkout_visitors'] = Pending_Visitor.objects.filter(status='CHECK-OUT')
+    return render(request, 'check_In.html', context)
 
 @csrf_exempt
 @login_required(login_url='admin:login')

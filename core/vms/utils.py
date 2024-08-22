@@ -59,13 +59,13 @@ def get_chart():
         department_percentages_json = json.dumps(department_percentages)
         return department_percentages_json
 
-def generate_qr_code(visitor):
+def generate_qr_code(visitor,name):
     # Generate QR code content based on visitor information
     qr_code_content = (
         f"Name: {visitor.visitor_name}\n"
         f"Mobile: {visitor.phone_number}\n"
         f"Email: {visitor.email_address}\n"
-        f"Host Employee: {get_object_or_404(Employee.employee_name)}\n"
+        f"Host Employee: {Employee.objects.get(employee_name=name)}\n"  # Come back to fix this
         f"Department: {visitor.dept}\n"
         f"Organization: {visitor.organization}"
     )  
@@ -157,7 +157,7 @@ def upload_qr_code_to_firebase(img_name, img_data):
         # Handle any exceptions and raise them
         raise e
 
-def sendVisitor_WhatApps_message(visitor,path):
+def send_visitor_whatsApp_message(visitor,path):
    # Replace with your eBulkSMS credentials
     username = "tidnigcomsat@gmail.com"  
     api_key = "d017cf5340ae6c0b2a0db7cc04a6252f905abc3c"
@@ -166,38 +166,44 @@ def sendVisitor_WhatApps_message(visitor,path):
 
     # Subject (not shown to recipient)
     subject = "Visitors Mgt Team"
-    qr_code_path = generate_qr_code(visitor)
+    qr_code_path = URL
     if qr_code_path:
-       qr_code_url = URL
-    # Your message content (up to 4000 characters)
-    message = f"""Dear {visitor.visitor_name},\n\nThis email is sent to you because you have indicated your interest to visit {visitor.dept} of NigComSat LTD.\nA QR Code image embedded with your basic details is available at the following link:{qr_code_url}\n\nPlease make sure that the image is available for scan at the entrance of your host.\n\nThanks,\nNigComSat Visitors Mgt Team"""
-    # Construct the JSON data
-    data ={"WA": {
-       "auth":{
-          "username": username,
-           "apikey": api_key,
-         },
-         "message":{
-             "subject": subject,
-            "messagetext": message,
-         },
-         "recipients":[
-              recipient
-         ]     
-        }
-        }
-        # Set the headers
-    headers = {"Content-Type": "application/json"}
-    # Send the POST request
-    url = "https://api.ebulksms.com/sendwhatsapp.json"
-    response = requests.post(url, headers=headers, json=data)
-    # Check for successful response
-    if response.status_code == 200:
-        print("Message sent successfully!")
-    else:
-        print(f"Error sending message: {response.text}")
+        # Your message content (up to 4000 characters)
+        message = f"""
+        Dear {visitor.visitor_name},
+        This email is sent to you because you have indicated your interest to visit {visitor.dept} of NigComSat LTD.
+        A QR Code image embedded with your basic details is available at the following link:{qr_code_path}\n.
+        Please make sure that the image is available for scan at the entrance of your host.
+        Thanks,
+        NigComSat Visitors Mgt Team.
+        """
+        # Construct the JSON data
+        data ={"WA": {
+        "auth":{
+            "username": username,
+            "apikey": api_key,
+            },
+            "message":{
+                "subject": subject,
+                "messagetext": message,
+            },
+            "recipients":[
+                recipient
+            ]     
+            }
+            }
+            # Set the headers
+        headers = {"Content-Type": "application/json"}
+        # Send the POST request
+        url = "https://api.ebulksms.com/sendwhatsapp.json"
+        response = requests.post(url, headers=headers, json=data)
+        # Check for successful response
+        if response.status_code == 200:
+            print("Message sent successfully!")
+        else:
+            print(f"Error sending message: {response.text}")
 
-def sendEmployee_whatApps_message(visitor, employee):
+def send_employee_whatsApp_message(employee, visitor):
     # Replace with your eBulkSMS credentials
     username = "tidnigcomsat@gmail.com"
     api_key = "d017cf5340ae6c0b2a0db7cc04a6252f905abc3c"
@@ -209,22 +215,43 @@ def sendEmployee_whatApps_message(visitor, employee):
     subject = "Visitor Request Notification"
 
     # Your message content
-    message = f"""
-    Dear {employee.employee_name},
-
-    This is to inform you that {visitor.visitor_name} from {visitor.organization} has requested to visit you in the {employee.dept_name} department.
-
-    Visit Details:
-    - Visitor: {visitor.visitor_name}
-    - Organization: {visitor.organization}
-    - Phone number: {visitor.phone_number}
-    - Scheduled Visit: {visitor.date_of_visit.strftime('%Y-%m-%d %H:%M:%S %p')}
-    Please if this visit is convenient for you. Login into the VMS portal: 127.0.0.1:8000/checkIn/ to approve it.
-    Thank you for your cooperation\n.
-  
-    Best regards,
-    NigComSat Visitors Mgt Team
+    msg = f"""
+    Dear, {employee.employee_name}
+    This is to inform you that {visitor.visitor_name} with mobile number { visitor.phone_number } from {visitor.organization} has requested to visit you in the {employee.dept_name} department.
+    Please, if this visit is convenient for you, log into the VMS portal: 127.0.0.1:8000/checkIn/ to approve it by inserting and submitting the visitor's ID in the page below. 
+    Else, click on the Decline button below to reject the visit.
+    Thanks,
+    NigComSat Visitors Mgt Team.
     """
+    # Construct the JSON data
+    data = {
+        "WA": {
+            "auth": {
+                "username": username,
+                "apikey": api_key, 
+            },
+            "message": {
+                "subject": subject,
+                "messagetext": msg,
+            },
+            "recipients": [
+                recipient
+            ]
+        }
+    }
+
+    # Set the headers
+    headers = {"Content-Type": "application/json"}
+
+    # Send the POST request
+    url = "https://api.ebulksms.com/sendwhatsapp.json"
+    response = requests.post(url, headers=headers, json=data)
+
+    # Check for successful response
+    if response.status_code == 200:
+        print("Message sent successfully!")
+    else:
+        print(f"Error sending message: {response.text}")
 
 def reject_visit(request, visitor_id):
     # Fetch the visitor details based on visitor_id

@@ -18,33 +18,34 @@
                                     </tr>
                                 </thead>
                                 <tbody id="visitorTableBody">
-                                    {% for visitor in approved_visitors %}
-                                        <tr>
-                                            <td class="text-primary">{{ visitor.name_id }}</td>
-                                            <td class="text-primary">{{ visitor.name }}</td>
-                                            <td>
-                                                <i class="fas fa-check-circle text-success"></i> Approved
-                                            </td>
-                                        </tr>
-                                        {% endfor %}
-                                        {% for visitor in pending_visitors %}
-                                        <tr>
-                                            <td class="text-primary">{{ visitor.name_id }}</td>
-                                            <td class="text-primary">{{ visitor.name }}</td>
-                                            <td>
-                                                <i class="fas fa-exclamation-circle text-warning"></i> Pending
-                                            </td>
-                                        </tr>
-                                        {% endfor %}
-                                        {% for visitor in checkout_visitors %}
-                                        <tr>
-                                            <td class="text-primary">{{ visitor.name_id }}</td>
-                                            <td class="text-primary">{{ visitor.name }}</td>
-                                            <td>
-                                                <i class="fas fa-exclamation-circle text-danger"></i> Checked Out
-                                            </td>
-                                        </tr>
-                                        {% endfor %}
+                                    
+                                        {% for visitor in approved_visitors %}
+                                            <tr>
+                                                <td class="text-primary">{{ visitor.name_id }}</td>
+                                                <td class="text-primary">{{ visitor.name}}</td>
+                                                <td>
+                                                    <i class="fas fa-check-circle text-success"></i> Approved
+                                                </td>
+                                            </tr>
+                                            {% endfor %}
+                                            {% for visitor in pending_visitors %}
+                                            <tr>
+                                                <td class="text-primary">{{ visitor.name_id }}</td>
+                                                <td class="text-primary">{{ visitor.name}}</td>
+                                                <td>
+                                                    <i class="fas fa-exclamation-circle text-warning"></i> Pending
+                                                </td>
+                                            </tr>
+                                            {% endfor %}
+                                            {% for visitor in checkout_visitors %}
+                                            <tr>
+                                                <td class="text-primary">{{ visitor.name_id }}</td>
+                                                <td class="text-primary">{{ visitor.name }}</td>
+                                                <td>
+                                                    <i class="fas fa-exclamation-circle text-danger"></i> Checked Out
+                                                </td>
+                                            </tr>
+                                            {% endfor %}
                                 </tbody>
                             </table>
                         </div>

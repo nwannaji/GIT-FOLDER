@@ -91,8 +91,12 @@ FIREBASE_CONFIG = {
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'vistorsdb',
+        'USER':'postgres',
+        'PASSWORD':'admin',
+        'HOST':'localhost',
+        'PORT':'5432',
     }
 }
 
@@ -127,7 +131,7 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)

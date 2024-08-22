@@ -1,4 +1,4 @@
-from datetime import datetime
+
 from django .utils.timezone import now
 from django.db import models
 
@@ -13,8 +13,8 @@ class Employee(models.Model):
     is_Admin = models.BooleanField(default=False, verbose_name='Is Admin?')
     is_contract_staff = models.BooleanField(default=False, blank=True, null=True, verbose_name='Contract staff?')
 
-    def __str__(self) -> str:
-        return self.employee_name
+    # def __str__(self) -> str:
+    #     return self.employee_name
 
     def list_employees(self):
         return ', '.join([employee.employee_name for employee in self.employees.all()])
@@ -33,10 +33,10 @@ class Visitor(models.Model):
     comments = models.TextField(blank=True, null=True)
     is_invited = models.BooleanField(default=False, blank=True, null=True, verbose_name="Invited?")
     first_timer = models.BooleanField(default=False, blank=True, null=True, verbose_name='First Timer?')
-    date_of_visit = models.DateTimeField(default=now, blank=True, null=False, verbose_name='Date of Appointment')
+    date_of_visit = models.DateField(default=now, blank=True, null=False, verbose_name='Date of Visit')
 
-    def __str__(self) -> str:
-        return self.visitor_name
+    # def __str__(self) -> str:
+    #     return self.visitor_name
     
     # Retrieve the names of employees the visitor wants to see.
     def get_employee_name(self):
