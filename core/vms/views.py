@@ -1,14 +1,17 @@
 from datetime import datetime
+from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.contrib import messages
 import pytz
+from django.db.models import Count
 from django.utils.timezone import now
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
 from .utils import  send_employee_whatsApp_message, send_visitor_whatsApp_message,reject_visit, send_approved_or_decline_visit,generate_qr_code,upload_qr_code_to_firebase
 from .models import CheckIn_Visitor, Pending_Visitor, Visitor,Employee
 
+@csrf_exempt
 def dashboard(request):
     # Retrieve all visitors
     visitors = Visitor.objects.all().order_by('-visitor_id')
@@ -35,6 +38,17 @@ def dashboard(request):
         'visitor_data_list': visitor_data_list,
     }
     return render(request, 'dashboard.html', context)
+
+@csrf_exempt
+def get_department_data(request):
+    data =(
+        Visitor.objects.values('dept').annotate(count=Count('visitor_id'))
+        .order_by('dept')
+    )
+    # Convert the data to a dictionary
+    department_data = {item['dept']: item['count'] for item in data}
+    return JsonResponse(department_data)
+
 
 @csrf_exempt
 def schedule_visit(request):
@@ -100,32 +114,31 @@ def error_message_page(request):
 @login_required(login_url='admin:login')
 def checkIn(request):
     context = {}
+
     if request.method == 'POST':
         visitor_id = request.POST.get('visitor_id')
         visitor = Visitor.objects.filter(pk=visitor_id).first()
 
         if visitor:
-            visitor_name = visitor.visitor_name
-            # Check if visitor is already in pending approval list
-            pending_visit = Pending_Visitor.objects.filter(name=visitor)
-            if pending_visit.exists():
-                pending_visit_instance = pending_visit.first()
-                if pending_visit_instance.status == 'PENDING' and request.POST.get('resubmitted'):
-                    pending_visit.update(status='APPROVED')
-                elif pending_visit_instance.status == 'APPROVED' and request.POST.get('resubmitted'):
-                    pending_visit.update(status='CHECK-OUT')
-                    return redirect('checkIn')  # Redirect to refresh the page
-                
-            # Add visitor_name to the context for rendering
-            context['visitor_name'] = visitor_name
+            pending_visit = Pending_Visitor.objects.filter(name=visitor).first()
+
+            if pending_visit:
+                if pending_visit.status == 'PENDING' and request.POST.get('resubmitted'):
+                    pending_visit.status = 'APPROVED'
+                    pending_visit.save()
+                elif pending_visit.status == 'APPROVED' and request.POST.get('resubmitted'):
+                    pending_visit.status = 'CHECK-OUT'
+                    pending_visit.save()
+                    context = {'name':visitor.visitor_name}
+                    return redirect('checkIn')  # Refresh the page
         else:
-            # Visitor not found, display an error message
             context['messages'] = 'Visitor not found.'
 
-    # Fetch all approved, pending, and checked out visitors
+    # Fetch all visitors based on their status
     context['approved_visitors'] = Pending_Visitor.objects.filter(status='APPROVED')
     context['pending_visitors'] = Pending_Visitor.objects.filter(status='PENDING')
     context['checkout_visitors'] = Pending_Visitor.objects.filter(status='CHECK-OUT')
+
     return render(request, 'check_In.html', context)
 
 @csrf_exempt
@@ -169,5 +182,13 @@ def update_checkin_visitorModel(request):
 def decline_visit(request, visitor_id):
 
     return render(request,'check_In.html')
+
+@csrf_exempt
+def draw_chart(request):
+    return render(request, 'my_chart.html')
+
+@csrf_exempt
+def contact_page(request):
+    return render(request, 'contact_us.html')
     
 

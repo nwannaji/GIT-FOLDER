@@ -17,8 +17,7 @@
                                         <th scope="col"> STATUS</th>
                                     </tr>
                                 </thead>
-                                <tbody id="visitorTableBody">
-                                    
+                                <tbody id="visitorTableBody">                             
                                         {% for visitor in approved_visitors %}
                                             <tr>
                                                 <td class="text-primary">{{ visitor.name_id }}</td>
@@ -56,7 +55,7 @@
                 {% csrf_token %}
                 <div class="col">
                    <p><label for="visitor_id" class="form-label text-primary">Insert visitor's Id to check In and Out</label></p>
-                    <div class="row align-items-center">
+                    <div class="row align-items-center mt-1">
                         <div class="col-auto">
                             <input type="text" id="visitor_id" name="visitor_id" class="form-control border-primary" required>
                             <!-- Hidden input field for resubmission -->
@@ -64,8 +63,7 @@
                         </div>
                     </div>
                 </div>
-                <br>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary mt-1">Submit</button>
             </form>
         </div>
     </div>

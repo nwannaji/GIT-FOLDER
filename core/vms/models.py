@@ -13,8 +13,8 @@ class Employee(models.Model):
     is_Admin = models.BooleanField(default=False, verbose_name='Is Admin?')
     is_contract_staff = models.BooleanField(default=False, blank=True, null=True, verbose_name='Contract staff?')
 
-    # def __str__(self) -> str:
-    #     return self.employee_name
+    def __str__(self) -> str:
+        return self.employee_name
 
     def list_employees(self):
         return ', '.join([employee.employee_name for employee in self.employees.all()])
@@ -35,8 +35,8 @@ class Visitor(models.Model):
     first_timer = models.BooleanField(default=False, blank=True, null=True, verbose_name='First Timer?')
     date_of_visit = models.DateField(default=now, blank=True, null=False, verbose_name='Date of Visit')
 
-    # def __str__(self) -> str:
-    #     return self.visitor_name
+    def __str__(self) -> str:
+        return self.visitor_name
     
     # Retrieve the names of employees the visitor wants to see.
     def get_employee_name(self):
@@ -55,17 +55,21 @@ class Pending_Visitor(models.Model):
         ('APPROVED', 'Approved'),
     ]
     status = models.CharField(max_length=10, choices=status_choices, default='PENDING')
-
-
     def __str__(self) -> str:
         return self.name
 
 class CheckIn_Visitor(models.Model):
     id = models.AutoField(primary_key=True)
     visitor_name = models.ForeignKey(Visitor, on_delete=models.CASCADE, related_name='Visitor_To_CheckIn')
-    time_In = models.DateTimeField()
-    time_Out = models.DateTimeField()
+    time_In = models.DateTimeField(auto_now_add=True)
+    time_Out = models.DateTimeField(auto_now=True)
     is_pending = models.BooleanField(default=True)
     is_approved = models.BooleanField(default=False)
     approved_by = models.CharField(max_length=150,blank=True,null=False)
+
+    def __str__(self) -> str:
+        return self.time_In
+    
+    def __str__(self) -> str:
+        return self.time_Out
 
