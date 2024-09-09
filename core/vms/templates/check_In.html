@@ -2,70 +2,70 @@
 {% load static %}
 
 {% block content %}
- <div class="container-fluid">
+<div class="container-fluid">
     <div class="row">
-        <div class= "col-lg-12 mb-lg-0 mb4">
+        <div class="col-lg-12 mb-lg-0 mb-4">
             <div class="card h-100 p-3">
                 <div class="card-body p-3 rounded-top rounded-bottom">
                     <div class="d-flex flex-column h-100">
                         <div class="mb-1 pt-2 fw-bold text-white">
-                            <table id="table-section" class="table table-response table-hover">
+                            <table id="table-section" class="table table-responsive table-hover">
                                 <thead class="text-primary">
                                     <tr>
                                         <th scope="col">ID</th>
                                         <th scope="col">VISITOR NAME</th>
-                                        <th scope="col"> STATUS</th>
+                                        <th scope="col">STATUS</th>
                                     </tr>
                                 </thead>
-                                <tbody id="visitorTableBody">                             
-                                        {% for visitor in approved_visitors %}
-                                            <tr>
-                                                <td class="text-primary">{{ visitor.name_id }}</td>
-                                                <td class="text-primary">{{ visitor.name}}</td>
-                                                <td>
-                                                    <i class="fas fa-check-circle text-success"></i> Approved
-                                                </td>
-                                            </tr>
-                                            {% endfor %}
-                                            {% for visitor in pending_visitors %}
-                                            <tr>
-                                                <td class="text-primary">{{ visitor.name_id }}</td>
-                                                <td class="text-primary">{{ visitor.name}}</td>
-                                                <td>
-                                                    <i class="fas fa-exclamation-circle text-warning"></i> Pending
-                                                </td>
-                                            </tr>
-                                            {% endfor %}
-                                            {% for visitor in checkout_visitors %}
-                                            <tr>
-                                                <td class="text-primary">{{ visitor.name_id }}</td>
-                                                <td class="text-primary">{{ visitor.name }}</td>
-                                                <td>
-                                                    <i class="fas fa-exclamation-circle text-danger"></i> Checked Out
-                                                </td>
-                                            </tr>
-                                            {% endfor %}
+                                <tbody id="visitorTableBody">
+                                    {% for visitor in pending_visitors %}
+                                    <tr>
+                                        <td class="text-primary">{{ visitor.name_id }}</td>
+                                        <td class="text-primary">{{ visitor.name }}</td>
+                                        <td>
+                                            <i class="fas fa-exclamation-circle text-secondary"></i> Pending
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                
+                                    {% for visitor in approved_visitors %}
+                                    <tr>
+                                        <td class="text-primary">{{ visitor.name_id }}</td>
+                                        <td class="text-primary">{{ visitor.name }}</td>
+                                        <td>
+                                            <i class="fas fa-check-circle text-success"></i> Approved
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                
+                                    {% for visitor in checkout_visitors %}
+                                    <tr>
+                                        <td class="text-primary">{{ visitor.name_id }}</td>
+                                        <td class="text-primary">{{ visitor.name }}</td>
+                                        <td>
+                                            <i class="fas fa-exclamation-circle text-danger"></i> Checked Out
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
                                 </tbody>
                             </table>
                         </div>
+
+                        <form action="{% url 'checkIn' %}" method="post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="visitor_id">Visitor ID:</label>
+                                <input type="text" id="visitor_id" name="visitor_id" class="form-control" placeholder="Enter Visitor ID" required>
+                            </div>
+                            <button type="submit" name="action" value="approve" class="btn btn-success mt-3">Approve</button>
+                            <button type="submit" name="action" value="checkout" class="btn btn-primary mt-3">CheckOut</button>
+                            <button type="submit" name="action" value="decline" class="btn btn-danger mt-3">Decline</button>
+                        </form>
+
                     </div>
                 </div>
             </div>
-            <form action="{% url 'checkIn' %}" method="post">
-                {% csrf_token %}
-                <div class="col">
-                   <p><label for="visitor_id" class="form-label text-primary">Insert visitor's Id to check In and Out</label></p>
-                    <div class="row align-items-center mt-1">
-                        <div class="col-auto">
-                            <input type="text" id="visitor_id" name="visitor_id" class="form-control border-primary" required>
-                            <!-- Hidden input field for resubmission -->
-                            <input type="hidden" name="resubmitted" value="true">
-                        </div>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary mt-1">Submit</button>
-            </form>
         </div>
     </div>
- </div>
+</div>
 {% endblock %}

@@ -1,5 +1,5 @@
 from datetime import datetime
-from django.http import JsonResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.contrib import messages
@@ -117,16 +117,17 @@ def checkIn(request):
 
     if request.method == 'POST':
         visitor_id = request.POST.get('visitor_id')
+        action = request.POST.get('action')
         visitor = Visitor.objects.filter(pk=visitor_id).first()
 
         if visitor:
             pending_visit = Pending_Visitor.objects.filter(name=visitor).first()
 
             if pending_visit:
-                if pending_visit.status == 'PENDING' and request.POST.get('resubmitted'):
+                if pending_visit.status == 'PENDING' and request.POST.get('action'):
                     pending_visit.status = 'APPROVED'
                     pending_visit.save()
-                elif pending_visit.status == 'APPROVED' and request.POST.get('resubmitted'):
+                elif pending_visit.status == 'APPROVED' and request.POST.get('action'):
                     pending_visit.status = 'CHECK-OUT'
                     pending_visit.save()
                     context = {'name':visitor.visitor_name}
@@ -141,47 +142,66 @@ def checkIn(request):
 
     return render(request, 'check_In.html', context)
 
+    
 @csrf_exempt
 @login_required(login_url='admin:login')
 def update_checkin_visitorModel(request):
     dt = datetime.now(pytz.timezone('Africa/Lagos'))
-    formatted_time = dt.strftime('%Y-%m-%d %H:%M:%S %z')
+    formatted_time_in = dt.strftime('%I:%M %p')
+    formatted_time_out = dt.strftime('%I:%M %p')
 
-    # Fetch the status, visitor name, and approved by from the related models
-    pending_approval_list = Pending_Visitor.objects.first()  # Fetching the first pending approval record for demonstration
-    if pending_approval_list:
-        visitor = pending_approval_list.name  # Accessing the VisitorsTable instance
+    # Fetch the first pending approval record
+    pending_approval = Pending_Visitor.objects.first()
+
+    if pending_approval:
+        visitor = pending_approval.name  # Accessing the Visitor instance
+        is_pending = pending_approval.status == 'PENDING'
+        is_approved = pending_approval.status == 'APPROVED'
     else:
-        status = False
         visitor = None
-    
-    # Assuming EmployeeTable has only one record
-    approvedBy = Employee.objects.first().employee_name  
-    is_pending = Pending_Visitor.objects.filter(status='PENDING').exists()
-    is_approved = Pending_Visitor.objects.filter(status='APPROVED').exists()
-    # is_checkout = Pending_Visitor.objects.filter(status='APPROVED').exists()
+        is_pending = False
+        is_approved = False
 
-    # Update CheckIn_visitor model
-    if visitor:
-        checkin_visitor = CheckIn_Visitor.objects.create(
-            time_In=formatted_time,
-            time_Out=formatted_time,
+    # Fetch the first employee who approved
+    approved_by = Employee.objects.first()
+
+    # Update CheckIn_Visitor model only if a visitor is found and an employee is present
+    if visitor and approved_by:
+        CheckIn_Visitor.objects.create(
+            visitor_name=visitor,
+            time_In=formatted_time_in,
+            time_Out=formatted_time_out,
             is_pending=is_pending,
             is_approved=is_approved,
-            next_visit=False,
-            approved_by=approvedBy,
-            is_active=False,
-            v_name=visitor  # Assign the visitor instance directly
+            approved_by=approved_by
         )
-        checkin_visitor.save()
-    else:
-        # Handle the case when there's no visitor
-        pass
-    return redirect('check_In')  # Redirect to refresh the page
 
-def decline_visit(request, visitor_id):
+    # Redirect to refresh the page
+    return redirect('checkIn')
 
-    return render(request,'check_In.html')
+@login_required(login_url='/admin/login/')  # Redirect to Django admin login if not logged in
+def approve_decline_visit(request):
+    visit_requests = Pending_Visitor.objects.filter(status='PENDING')
+    if request.method == 'POST':
+        visit_id = request.POST.get('visit_id')
+        action = request.POST.get('action')
+        visit_request = get_object_or_404(Pending_Visitor, id=visit_id)
+        if action == 'approve':
+            visit_request.status = 'APPROVED'
+            visit_request.approved_by = request.user
+            visit_request.save()
+            return HttpResponse(f"Visit request by {visit_request.visitor.name} has been approved.")
+        elif action == 'decline':
+            visit_request.status = 'DECLINED'
+            visit_request.approved_by = request.user
+            visit_request.save()
+            return HttpResponse(f"Visit request by {visit_request.visitor.name} has been declined.")
+        elif action == 'checkout':
+            visit_request.status = 'CHECK-OUT'
+            visit_request.approved_by = request.user
+            visit_request.save()
+            return HttpResponse(f"This visitor by name {visit_request.visitor.name} has been checked-out.")
+    return render(request,'check_In.html',{'visit_requests': visit_requests})
 
 @csrf_exempt
 def draw_chart(request):

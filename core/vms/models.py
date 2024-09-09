@@ -53,7 +53,8 @@ class Pending_Visitor(models.Model):
     status_choices = [
         ('PENDING', 'Pending Approval'),
         ('APPROVED', 'Approved'),
-        ('CHECKOUT', 'checkout'),
+        ('CHECKOUT', 'Checkout'),
+        ('DECLINE', 'Decline'),
     ]
     status = models.CharField(max_length=10, choices=status_choices, default='PENDING')
     def __str__(self) -> str:
@@ -66,14 +67,8 @@ class CheckIn_Visitor(models.Model):
     time_Out = models.DateTimeField(auto_now=True)
     is_pending = models.BooleanField(default=True)
     is_approved = models.BooleanField(default=False)
-    approved_by = models.ForeignKey( Employee,on_delete=models.CASCADE)
+    approved_by = models.ForeignKey(Employee, on_delete=models.SET_NULL, null=True, blank=True)
 
     def __str__(self) -> str:
-        return self.approved_by
-    
-    def __str__(self) -> str:
-        return self.time_In
-    
-    def __str__(self) -> str:
-        return self.time_Out
+        return f"Visitor: {self.visitor_name}, Checked In: {self.time_In}, Approved By: {self.approved_by}"
 
