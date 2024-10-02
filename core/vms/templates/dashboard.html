@@ -10,8 +10,8 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-12 mb-lg-0 mb4">
-            <div class="card h-100 p-3">
-                <div class="card-body p-3 rounded-top rounded-bottom">
+            <div class="card h-100 p-0">
+                <div class="card-body p-1 rounded-top rounded-bottom">
                     <div class="d-flex flex-column h-100">
                         <p class="mb-1 pt-2 fw-bold text-white"><i class="fas fa-users">Visitors</i></p>
                         <table id="table-section" class="table table-responsive table-hover">
@@ -69,77 +69,98 @@
                 <form action="{% url 'schedule_visit' %}" method="post">
                     {% csrf_token %}
                     <div class="row g-3 needs-validation" novalidate>
-                      <div class="col-md-6">
-                        <label for="visitor_name" class="form-label text-primary">Visitor's Name</label>
-                        <input type="text" id="visitor_name" name="visitor_name" class="form-control border-primary" required>
-                      </div>
-                      <div class="col-md-6">
-                            <label for="phone_number" class="form-label text-primary">(Int'l) Phonenumber</label>
+                        <!--visitor-name-->
+                        <div class="col-md-6">
+                            <label for="visitor_name" class="form-label text-primary">Visitor's Name</label>
+                            <input type="text" id="visitor_name" name="visitor_name" class="form-control border-primary" required>
+                        </div>
+                        <!-- Phone-Number -->
+                        <div class="col-md-6">
+                            <label for="phone_number" class="form-label text-primary">Phone Number</label>
                             <input type="text" id="phone_number" name="phone_number" class="form-control border-primary" required>
                         </div>
-                        <div class="col-md-6">
-                            <label for="email_address" class="form-label text-primary">Email Address</label>
-                            <input type="text" id="email_address" name="email_address" class="form-control border-primary" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="organization" class="form-label text-primary">organization</label>
-                            <input type="text" id="organization" name="organization" class="form-control border-primary" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="dept" class="form-label text-primary"> Host Department</label>
-                            <select id="dept" name="dept" class="form-select border-primary" required>
-                                <option value="" selected disabled>Select Department</option>
-                                <option value="MDs Office">MDs Office</option>
-                                <option value="Human Resource">Human Resource</option>
-                                <option value="Finance & Admin">Finance & Admin</option>
-                                <option value="Accounts">Accounts</option>
-                                <option value="Registry">Registry</option>
-                                <option value="Budget">Budget</option>
-                                <option value="Satellite Control Center">Satellite Control Center</option>
-                                <option value="Network Operating Center">Network Operating Center</option>
-                                <option value="Broad Band Services">Broad Band Services</option>
-                                <option value="Innovation">Innovation</option>
-                                <option value="Navigation">Navigation</option>
-                                <option value="Procurement">Procurement</option>
-                                <option value="Legal">Legal</option>
-                                <option value="Facility">Facility</option>
-                                <option value="ISSD">ISSD</option>
-                                <option value="IT">IT</option>    
-                            </select>
-                        </div>
+                         <!-- Email-Address -->
+                         <div class="col-md-6">
+                          <label for="email_address" class="form-label text-primary">Email Address</label>
+                          <input type="text" id="email_address" name="email_address" class="form-control border-primary" required>
+                         </div>
+                         <!--Address-->
+                         <div class="col-md-6">
+                          <label for="organization" class="form-label text-primary">Organization/Address</label>
+                          <input type="text" id="organization" name="organization" class="form-control border-primary" required>
+                         </div>
+                        <!-- Employee Name Field with Autocomplete Suggestions -->
                         <div class="col-md-6">
                             <label for="whom_to_see" class="form-label text-primary">Host Employee</label>
-                            <input type="text" id="whom_to_see" name="whom_to_see" class="form-control border-primary" required>
+                            <input type="text" id="whom_to_see" name="whom_to_see" class="form-control border-primary" list="employee_suggestions" autocomplete="off">
+                            <datalist id="employee_suggestions"></datalist>
                         </div>
+            
+                        <!-- Auto-filled Department Field -->
                         <div class="col-md-6">
-                            <label for="is_official" class="form-label text-primary">Purpose of Visit</label>
-                            <input type="text" id="comments" name="comments" class="form-control border-primary" required>
+                            <label for="dept" class="form-label text-primary">Host Department</label>
+                            <input type="text" id="dept" name="dept" class="form-control border-primary" readonly required>
                         </div>
-                        <div class="col-md-6">
-                            <label for="date_of_visit" class="form-label text-primary">Date of Visit</label>
-                            <input type="date" id="date_of_visit" name="date_of_visit" class="form-control border-primary" required>
-                        </div> 
-                        <div class="col-md-3 form-group">
-                            <label for="is_invited" class="form-label text-primary">Is_Official?</label>
+                        <!-- Reason-for-visit-->
+                         <div class="col-md-6">
+                          <label for="is_official" class="form-label text-primary">Purpose of Visit</label>
+                          <input type="text" id="comments" name="comments" class="form-control border-primary" required>
+                         </div>
+                          <!-- Date-of-visit -->
+                          <div class="col-md-6">
+                           <label for="date_of_visit" class="form-label text-primary">Date of Visit</label>
+                           <input type="date" id="date_of_visit" name="date_of_visit" class="form-control border-primary">
+                          </div> 
+                          <!--Official? -->
+                           <div class="col-md-3 form-group">
+                            <label for="is_invited" class="form-label text-primary">Official?</label>
                             <input type="checkbox" id="is_official" name="is_official">
-                        </div>                        
-                        <div class="col-md-3 form-group">
-                            <label for="is_invited" class="form-label text-primary">Expected?</label>
-                            <input type="checkbox" id="is_invited" name="is_invited">
+                           </div> 
+                           <!--Expected--> 
+                            <div class="col-md-3 form-group">
+                              <label for="is_invited" class="form-label text-primary">Expected?</label>
+                              <input type="checkbox" id="is_invited" name="is_invited">
+                            </div>
+                             <!--First timer-->
+                              <div class="col-md-3 form-group">
+                               <label for="first_timer" class="form-label text-primary">First Timer?</label>
+                               <input type="checkbox" id="first_timer" name="first_timer">
+                              </div>
+            
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                         </div>
-                        <div class="col-md-3 form-group">
-                            <label for="first_timer" class="form-label text-primary">First Timer?</label>
-                            <input type="checkbox" id="first_timer" name="first_timer">
-                          </div>       
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Save</button>
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                     </div>
                 </form>
             </div>
-            <!-- This JavaScript code ensure that a checkBox is checked at s time and not the two simutaeously -->
+            
             <script>
+                document.getElementById('whom_to_see').addEventListener('input', function () {
+                    const input = this.value;
+            
+                    if (input.length > 2) {  // Fetch suggestions only when input length is greater than 2
+                        fetch(`/fetch_employees/?q=${input}`)
+                            .then(response => response.json())
+                            .then(data => {
+                                let suggestions = '';
+                                data.forEach(employee => {
+                                    suggestions += `<option value="${employee.name}" data-dept="${employee.dept}"></option>`;
+                                });
+                                document.getElementById('employee_suggestions').innerHTML = suggestions;
+                            });
+                    }
+                });
+            
+                // Auto-fill department based on selected employee
+                document.getElementById('whom_to_see').addEventListener('change', function () {
+                    const selectedOption = document.querySelector(`#employee_suggestions option[value="${this.value}"]`);
+                    if (selectedOption) {
+                        const dept = selectedOption.getAttribute('data-dept');
+                        document.getElementById('dept').value = dept;
+                    }
+                });
+ // This JavaScript code ensure that a checkBox is checked at s time and not the two simutaeously 
                 const invitedCheckbox = document.getElementById('is_invited');
                 const firstTimerCheckbox = document.getElementById('first_timer');
                 const isOfficialCheckbox = document.getElementById('is_official');
@@ -149,7 +170,6 @@
                         firstTimerCheckbox.checked = false;
                     }
                 });
-            
                 firstTimerCheckbox.addEventListener('change', function() {
                     if (this.checked) {
                         invitedCheckbox.checked = false;

@@ -23,6 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-m@0o7s@^ii2u56tnzz72+*iq2(1$5#6@xl=na+e2_*5-g*l*2j'
 
+USERNAME = "tidnigcomsat@gmail.com"
+API_KEY = "d017cf5340ae6c0b2a0db7cc04a6252f905abc3c"
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -118,7 +121,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-LOGIN_URL = 'admin:login'  # Redirect to Django admin login
+LOGIN_URL = '/admin/login/'  # Redirect to Django admin login
 
 
 

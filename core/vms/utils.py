@@ -1,6 +1,7 @@
 
 import os
 import json
+import secrets
 from urllib.error import HTTPError
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, redirect
@@ -11,6 +12,7 @@ import logging
 import requests
 import pyrebase
 from core import settings
+from core.settings import USERNAME, API_KEY
 from setuptools.command.build import build
 
 
@@ -59,46 +61,46 @@ def get_chart():
         department_percentages_json = json.dumps(department_percentages)
         return department_percentages_json
 
-def generate_qr_code(visitor,name):
-    # Generate QR code content based on visitor information
-    qr_code_content = (
-        f"Name: {visitor.visitor_name}\n"
-        f"Mobile: {visitor.phone_number}\n"
-        f"Email: {visitor.email_address}\n"
-        f"Host Employee: {Employee.objects.get(employee_name=name)}\n"  # Come back to fix this
-        f"Department: {visitor.dept}\n"
-        f"Organization: {visitor.organization}"
-    )  
-    # Create a QR code image
-    qr = qrcode.QRCode(
-        version=1,
-        error_correction=qrcode.constants.ERROR_CORRECT_L,
-        box_size=10,
-        border=4,
-    )
-    qr.add_data(qr_code_content)
-    qr.make(fit=True)
+def generate_qr_code(visitor, name):
+    try:
+        # Generate QR code content
+        qr_code_content = (
+            f"Name: {visitor.visitor_name}\n"
+            f"Mobile: {visitor.phone_number}\n"
+            f"Email: {visitor.email_address}\n"
+            f"Host Employee: {Employee.objects.get(employee_name=name)}\n"
+            f"Department: {visitor.dept}\n"
+            f"Organization: {visitor.organization}"
+        )
+        
+        # Create QR code object
+        qr = qrcode.QRCode(
+            version=1,
+            error_correction=qrcode.constants.ERROR_CORRECT_L,
+            box_size=10,
+            border=4,
+        )
+        qr.add_data(qr_code_content)
+        qr.make(fit=True)
 
-    # Generate QR code image file name
-    qr_code_file_name = f"{visitor.visitor_name}_qr_code.png"
+        # Create directory if it doesn't exist
+        qr_code_directory = "static/qr_codes/"
+        os.makedirs(qr_code_directory, exist_ok=True)
 
-    # Define the directory to save QR codes
-    qr_code_directory = "static/qr_codes/"
-    
-    # Ensure the directory exists, create if it doesn't
-    os.makedirs(qr_code_directory, exist_ok=True)
+        # Save QR code as PNG
+        qr_code_file_name = f"{visitor.visitor_name}_qr_code.png"
+        qr_code_path = os.path.join(qr_code_directory, qr_code_file_name)
+        qr.make_image(fill_color="black", back_color="white").save(qr_code_path)
 
-    # Generate the file path to save the QR code
-    qr_code_path = os.path.join(qr_code_directory, qr_code_file_name)
+        return qr_code_path
+    except Exception as e:
+        logger.error(f"Error generating QR code for {visitor.visitor_name}: {e}")
+        return None
 
-    # Save the QR code image
-    qr.make_image(fill_color="black", back_color="white").save(qr_code_path)
-
-    return qr_code_path
 
 def generate_otp(visitor):
     # Generate a random OTP
-    otp = ''.join(random.choices(string.ascii_letters + string.digits, k=6))
+    otp = ''.join(secrets.choices(string.ascii_letters + string.digits) for _ in range(6))
     return otp
 
 # Assuming credentials are stored securely (e.g., Django settings)
@@ -110,35 +112,29 @@ def get_credentials():
   return credentials
 
 def build_email_message(sender_email, visitor, subject, body):
-  """Constructs a MIME message object for sending email with QR code attachment."""
-  message = MIMEMultipart()
-  message['From'] = sender_email
-  message['To'] = visitor.mobile
-  message['Subject'] = subject
-  message.attach(MIMEText(body, 'plain'))  # Set content type as plain text
+    try:
+        message = MIMEMultipart()
+        message['From'] = sender_email
+        message['To'] = visitor.email_address
+        message['Subject'] = subject
+        message.attach(MIMEText(body, 'plain'))
 
-  # Generate QR code (assuming visitor data is available)
-  qr_code_path = generate_qr_code(visitor)  # Replace 'visitor' with your visitor data access
+        # Generate QR code
+        qr_code_path = generate_qr_code(visitor, visitor.visitor_name)
 
-  # Check if QR code was generated successfully
-  if qr_code_path:
-    # Read QR code image data
-    with open(qr_code_path, 'rb') as f:
-      qr_code_data = f.read()
+        # Attach QR code if generated
+        if qr_code_path and os.path.exists(qr_code_path):
+            with open(qr_code_path, 'rb') as qr_file:
+                img_data = qr_file.read()
+                image_part = MIMEImage(img_data)
+                image_part.add_header('Content-Disposition', 'attachment', filename=os.path.basename(qr_code_path))
+                message.attach(image_part)
+        
+        return message.as_string().encode('utf-8')
+    except Exception as e:
+        logger.error(f"Error building email for {visitor.visitor_name}: {e}")
+        return None
 
-    # Prepare attachment data
-    attachment_data = {
-      'content_type': 'image/png',  # Set content type for PNG image
-      'data': qr_code_data,
-      'encoding': 'base64'  # Assuming base64 encoding for image data
-    }
-
-    # Attach QR code image
-    image_part = MIMEImage(attachment_data['data'], attachment_data['content_type'], attachment_data['encoding'])
-    image_part.add_header('Content-Disposition', 'attachment; filename="qr_code.png"')
-    message.attach(image_part)
-
-  return message.as_string().encode('utf-8')
     
     
 def upload_qr_code_to_firebase(img_name, img_data):
@@ -153,60 +149,57 @@ def upload_qr_code_to_firebase(img_name, img_data):
         public_url = storage.child(image_path).get_url(None)
         global URL 
         URL =public_url
+        return URL
     except Exception as e:
-        # Handle any exceptions and raise them
-        raise e
+        logger.error(f"Error uploading QR code {img_name} to Firebase: {e}")
+        return None
 
-def send_visitor_whatsApp_message(visitor,path):
-   # Replace with your eBulkSMS credentials
-    username = "tidnigcomsat@gmail.com"  
-    api_key = "d017cf5340ae6c0b2a0db7cc04a6252f905abc3c"
-    # Recipient phone number (including country code)
-    recipient = visitor.phone_number
+def send_visitor_whatsApp_message(visitor):
+    username = USERNAME
+    api_key = API_KEY
+    try:
+        # Generate message content
+        qr_code_path = URL
+        message = (
+            f"Dear {visitor.visitor_name},\n"
+            f"You are scheduled to visit {visitor.dept} at NigComSat LTD.\n"
+            f"Access your QR code here: {qr_code_path}\n"
+            "Please present this at the entrance."
+        )
 
-    # Subject (not shown to recipient)
-    subject = "Visitors Mgt Team"
-    qr_code_path = URL
-    if qr_code_path:
-        # Your message content (up to 4000 characters)
-        message = f"""
-        Dear {visitor.visitor_name},
-        This email is sent to you because you have indicated your interest to visit {visitor.dept} of NigComSat LTD.
-        A QR Code image embedded with your basic details is available at the following link:{qr_code_path}\n.
-        Please make sure that the image is available for scan at the entrance of your host.
-        Thanks,
-        NigComSat Visitors Mgt Team.
-        """
-        # Construct the JSON data
-        data ={"WA": {
-        "auth":{
-            "username": username,
-            "apikey": api_key,
-            },
-            "message":{
-                "subject": subject,
-                "messagetext": message,
-            },
-            "recipients":[
-                recipient
-            ]     
+        data = {
+            "WA": {
+                "auth": {
+                    "username": username,
+                    "apikey": api_key,
+                },
+                "message": {
+                    "subject": "Visitor QR Code",
+                    "messagetext": message,
+                },
+                "recipients": [visitor.phone_number]
             }
-            }
-            # Set the headers
-        headers = {"Content-Type": "application/json"}
-        # Send the POST request
-        url = "https://api.ebulksms.com/sendwhatsapp.json"
-        response = requests.post(url, headers=headers, json=data)
-        # Check for successful response
+        }
+
+        # Send request
+        response = requests.post(
+            "https://api.ebulksms.com/sendwhatsapp.json", 
+            headers={"Content-Type": "application/json"}, 
+            json=data
+        )
+
         if response.status_code == 200:
-            print("Message sent successfully!")
+            logger.info(f"WhatsApp message sent successfully to {visitor.phone_number}.")
         else:
-            print(f"Error sending message: {response.text}")
+            logger.error(f"Failed to send WhatsApp message: {response.text}")
+    except Exception as e:
+        logger.error(f"Error sending WhatsApp message to {visitor.phone_number}: {e}")
+
 
 def send_employee_whatsApp_message(employee, visitor):
     # Replace with your eBulkSMS credentials
-    username = "tidnigcomsat@gmail.com"
-    api_key = "d017cf5340ae6c0b2a0db7cc04a6252f905abc3c"
+    username = USERNAME
+    api_key = API_KEY
 
     # Recipient phone number (including country code)
     recipient = employee.phone_number
@@ -253,14 +246,14 @@ def send_employee_whatsApp_message(employee, visitor):
     else:
         print(f"Error sending message: {response.text}")
 
-def reject_visit(request, visitor_id):
+def reject_visit( request, name):
     # Fetch the visitor details based on visitor_id
-    visitor = get_object_or_404(Visitor, id=visitor_id)
+    visitor = get_object_or_404(Visitor, id=name)
     
     # Send decline message
-    send_approved_or_decline_visit(visitor, 'DECLINED')
+    return send_approved_or_decline_visit(visitor, 'DECLINED')
     
-    return HttpResponse("Your visit has been declined.")
+    # return HttpResponse("Your visit has been declined.")
 
 def send_approved_or_decline_visit(visitor,visit_status):
       # Replace with your eBulkSMS credentials

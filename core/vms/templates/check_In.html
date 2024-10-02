@@ -23,7 +23,7 @@
                                         <td class="text-primary">{{ visitor.name_id }}</td>
                                         <td class="text-primary">{{ visitor.name }}</td>
                                         <td>
-                                            <i class="fas fa-exclamation-circle text-secondary"></i> Pending
+                                            <i class="fas fa-exclamation-circle text-warning"></i> Pending
                                         </td>
                                     </tr>
                                     {% endfor %}
@@ -44,6 +44,7 @@
                                         <td class="text-primary">{{ visitor.name }}</td>
                                         <td>
                                             <i class="fas fa-exclamation-circle text-danger"></i> Checked Out
+                                            {{messages.daner}}
                                         </td>
                                     </tr>
                                     {% endfor %}
