@@ -25,6 +25,14 @@ jobs:
           channel: stable
           flutter-version: 3.19.0
       - run: flutter --version
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Run tests
+        run: flutter test
+
+      - name: Build APK
+        run: flutter build apk --release
 
       # Note: This workflow uses the latest stable version of the Dart SDK.
       # You can specify other versions if desired, see documentation here:
